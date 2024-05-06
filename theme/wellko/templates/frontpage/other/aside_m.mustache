@@ -1,0 +1,27 @@
+<!-- Mobile Menu Start -->
+<aside class="aside_bar aside_bar_left aside_mobile">
+    <!-- logo -->
+    <a href="{{{ config.homeurl }}}" class="logo">
+        {{# output.should_display_navbar_logo }}
+            <img src="{{output.get_compact_logo_url}}" alt="{{sitename}}">
+        {{/ output.should_display_navbar_logo }}
+        {{^ output.should_display_navbar_logo }}
+            {{{ sitename }}}
+        {{/ output.should_display_navbar_logo }}
+    </a>
+     <!-- logo -->
+    <!-- Menu -->
+    <nav>
+        <ul class="main-menu">
+            {{#userlogin}}
+            <li class="menu-item">
+                <a href="my">{{#str}}mymoodle, admin{{/str}}</a>
+            </li>
+            {{/userlogin}}
+            {{{frontpagenavlink}}}
+        </ul>
+    </nav>
+    <!-- Menu -->
+</aside>
+<div class="aside-overlay trigger-left"></div>
+<!-- Mobile Menu End -->

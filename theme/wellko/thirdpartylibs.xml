@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<libraries>
+    <library>
+        <location>fonts/</location>
+        <name>Boxicons - free - https://boxicons.com/</name>
+        <license>The MIT License (MIT)</license>
+        <version>2.1.2</version>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>js/slick.min.js</location>
+        <name>Slick.js</name>
+        <license>MIT</license>
+        <version>1.8.1</version>
+        <licenseversion>2022</licenseversion>
+    </library>
+    <library>
+        <location>style/animate.css</location>
+        <name>animate.css - https://animate.style/</name>
+        <license>Licensed under the MIT license - http://opensource.org/licenses/MIT</license>
+        <version>4.1.1</version>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>js/jquery.magnific-popup.min.js</location>
+        <name>Magnific Popup - http://dimsemenov.com/plugins/magnific-popup/</name>
+        <license>Licensed under the MIT license - http://opensource.org/licenses/MIT</license>
+        <version>v1.1.0</version>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>style/magnific-popup.css</location>
+        <name>Magnific Popup - http://dimsemenov.com/plugins/magnific-popup/</name>
+        <license>Licensed under the MIT license - http://opensource.org/licenses/MIT</license>
+        <version>v1.1.0</version>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>js/imagesloaded.min.js</location>
+        <name>imagesLoaded - https://imagesloaded.desandro.com/</name>
+        <license>Licensed under the MIT license - http://opensource.org/licenses/MIT</license>
+        <version>v4.1.4</version>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>js/isotope.pkgd.min.js</location>
+        <name>Isotope - https://isotope.metafizzy.co</name>
+        <license>Licensed GPLv3 for open source use - https://opensource.org/licenses/GPL-3.0</license>
+        <version>v3.0.6</version>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>js/jquery.countdown.min.js</location>
+        <name>The Final Countdown - http://hilios.github.io/jQuery.countdown/</name>
+        <license>Licensed under the MIT license - http://opensource.org/licenses/MIT</license>
+        <version>v2.1.0</version>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>js/jquery.counterup.min.js</location>
+        <name>Benjamin Intal http://gambit.ph</name>
+        <license>Licensed GPLv2 for open source use - https://opensource.org/licenses/GPL-2.0</license>
+        <version>1.0</version>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>js/jquery.easypiechart.js</location>
+        <name>easyPieChart http://robert-fleischmann.de</name>
+        <license>Licensed under the MIT license - http://opensource.org/licenses/MIT</license>
+        <version>2.1.6</version>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>js/jquery.inview.min.js</location>
+        <name>inview</name>
+        <license>Licensed under the MIT license - http://opensource.org/licenses/MIT</license>
+        <version>1.0.0</version>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>js/leaflet.js</location>
+        <name>Leaflet http://leafletjs.com</name>
+        <license>BSD 2-Clause "Simplified" License - https://github.com/Leaflet/Leaflet/blob/main/LICENSE</license>
+        <version>1.7.1</version>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>js/wow.min.js</location>
+        <name>WOW https://wowjs.uk</name>
+        <license>Licensed under the MIT license - http://opensource.org/licenses/MIT</license>
+        <version>v1.3.0</version>
+        <licenseversion></licenseversion>
+    </library>
+</libraries>

@@ -1,0 +1,96 @@
+<section id="h3_block06" class="pricing_sec section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title wow fadeInDown">
+                    <p class="subtitle">
+                        <i class="fal fa-book"></i>
+                        {{h3_06_block_headline}}
+                    </p>
+                    <h3 class="title">{{h3_06_block_header}}</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav nav-tabs style_1 border-0 justify-content-center justify-content-lg-end wow fadeInRight">
+                    <li class="nav-item">
+                        <a href="#monthly" class="nav-link mb-0 border-0 thm-btn bg-thm-color-one btn-rectangle active"
+                             data-toggle="tab">{{#str}} monthly, calendar {{/str}} 
+                            <i class="fal fa-chevron-right ml-2"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#yearly" class="nav-link mb-0 border-0 thm-btn bg-thm-color-one btn-rectangle" 
+                        data-toggle="tab">{{#str}} annually, calendar {{/str}}
+                            <i class="fal fa-chevron-right ml-2"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade active show" id="monthly">
+                        <div class="row no-gutters justify-content-center">
+                            {{#h3_06_block}}
+                            <div class="col-lg-4 col-md-6">
+                                <div class="plan_box {{active_m}} wow fadeInDown">
+                                    <h4 class="plan_title">{{title_m}}</h4>
+                                    <p class="plan_subtext">{{caption_m}}</p>
+                                    <h2 class="plan_price">{{price_m}}</h2>
+                                    <ul class="about_list style_2 mb-xl-30">
+                                        <li>
+                                            {{text_four_m_1}}
+                                        </li>
+                                        <li>
+                                            {{text_four_m_2}}
+                                        </li>
+                                        <li>
+                                            {{text_four_m_3}}
+                                        </li>
+                                        <li>
+                                            {{text_four_m_4}}
+                                        </li>
+                                    </ul>
+                                    <a href="?page=10" class="thm-btn bg-thm-color-two-light thm-color-one btn-rectangle">
+                                        {{#str}} select, moodle {{/str}}
+                                        <i class="fal fa-chevron-right ml-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            {{/h3_06_block}}
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="yearly">
+                        <div class="row no-gutters justify-content-center">
+                            {{#h3_06_block}}
+                            <div class="col-lg-4 col-md-6">
+                                <div class="plan_box {{active_y}} wow fadeInUp">
+                                    <h4 class="plan_title">{{title_y}}</h4>
+                                    <p class="plan_subtext">{{caption_y}}</p>
+                                    <h2 class="plan_price">{{price_y}}</h2>
+                                    <ul class="about_list style_2 mb-xl-30">
+                                        <li>
+                                            {{text_four_y_1}}
+                                        </li>
+                                        <li>
+                                            {{text_four_y_2}}
+                                        </li>
+                                        <li>
+                                            {{text_four_y_3}}
+                                        </li>
+                                        <li>
+                                            {{text_four_y_4}}
+                                        </li>
+                                    </ul>
+                                    <a href="?page=10" class="thm-btn bg-thm-color-two-light thm-color-one btn-rectangle">Select Plan 
+                                        <i class="fal fa-chevron-right ml-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            {{/h3_06_block}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

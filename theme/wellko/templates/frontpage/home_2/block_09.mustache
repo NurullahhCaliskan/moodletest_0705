@@ -1,0 +1,49 @@
+    <section id="h2_block09" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title wow fadeInDown">
+                        <p class="subtitle">
+                            <i class="fal fa-book"></i>
+                            {{{h2_09_block_headline}}}
+                        </p>
+                        <h3 class="title">{{{h2_09_block_header}}}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- post -->
+                {{#h2_09_block}}
+                <div class="col-xl-4 col-md-6">
+                    <article class="post wow fadeInUp" data-wow-delay=".{{count}}s">
+                        <div class="post_img">
+                            {{#imgurl}}
+                            <img src="{{imgurl}}" alt="img" class="image-fit">
+                            {{/imgurl}}
+                        </div>
+                        <div class="post_caption">
+                            <ul class="post_meta">
+                                <li>
+                                    <i class="fal fa-calendar-alt"></i>
+                                    {{lastmodified}}
+                                </li>
+                                <li>
+                                    <i class="fal fa-comment-lines"></i>
+                                    Comments ({{commentscount}}) 
+                                </li>
+                            </ul>
+                            <h4 class="post_title">
+                                <a href="{{post_detail_lnk}}">{{subject}}</a>
+                            </h4>
+                            <p class="post_text">
+                               {{#shortentext}} 125, {{{summary}}} {{/shortentext}}
+                            </p>
+                            <a href="{{post_detail_lnk}}" class="thm-btn bg-thm-color-white thm-color-one btn-border btn-rounded">Read More <i class="fal fa-chevron-right ml-2"></i></a>
+                        </div>
+                    </article>
+                </div>
+                {{/h2_09_block}}
+                <!-- post -->
+            </div>
+        </div>
+    </section>

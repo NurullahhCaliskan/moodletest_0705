@@ -1,0 +1,90 @@
+
+body {
+    --color-dl-white-bsc: $body-bg;
+    --color-dl-bg-black: $body-color;
+    color: var(--color-dl-white-bsc);
+    background-color: var(--color-dl-bg-black);
+}
+/* Override boost theme settings */
+// Accessible focus styling for buttons like elements that do not use the .btn class. Add
+// .aabtn to you element if you need the same focus styles.
+.aabtn,
+.btn-link,
+.nav-link,
+.editor_atto_toolbar button,
+.editor_atto_toolbar .atto_toolbar_row,
+[role="button"],
+.list-group-item-action,
+input[type="checkbox"],
+input[type="radio"],
+input[type="file"],
+input[type="image"],
+.sr-only-focusable,
+a.dropdown-toggle,
+.modal-dialog[tabindex="0"],
+.moodle-dialogue-base .closebutton,
+button.close,
+.form-autocomplete-selection,
+[role="treeitem"]:not([aria-expanded="true"]) {
+    &.focus,
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+    &:focus:hover {
+        text-decoration: none;
+    }
+}
+// Category select box
+.custom-select:focus {
+    box-shadow: none;
+}
+// Accessible focus styling for links, add .aalink to links with custom css classes to get
+// accessible focus styles.
+.aalink,
+#page-footer a:not([class]),
+.arrow_link,
+a:not([class]),
+.activityinstance > a {
+    &.focus,
+    &:focus {
+        outline: none;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    &:focus:hover {
+        text-decoration: none;
+    }
+}
+/* Newsletter block check icon*/
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+    background-image: url([[pix:theme|fp/check]]) !important;
+}
+.drawer-left .drawer-left-mi {
+    display: none;
+}
+.drawer-right .drawer-right-mi {
+    display: none;
+}
+.drawer .drawerheader .btn {
+    padding: 3px;
+}
+.path-grade-report-user .h2 {
+    display: block !important;
+}
+
+@include media-breakpoint-down(md) {
+    .breadcrumb:not(:empty) {
+        font-size: 13px;
+    }
+}
+@include media-breakpoint-down(sm) {
+    .breadcrumb:not(:empty) {
+        font-size: 10px;
+    }
+}
+@include media-breakpoint-down(xs) {
+    .breadcrumb:not(:empty) {
+        display: none;
+    }
+}

@@ -1,0 +1,210 @@
+/* Course SCSS */
+.editing.dark-dashboard .activity-item {
+    &:hover {
+        color: var(--color-dl-grey-a);
+        background-color: var(--color-dl-grey-b);
+        border-color: var(--color-dl-yellow-a);
+        .description .course-description-item,
+        .activityiconcontainer,
+        .badge {
+            mix-blend-mode: normal;
+        }
+    }
+}
+
+.path-mod-quiz.dark-dashboard #mod_quiz_navblock {
+    .btn-secondary {
+        color: var(--color-dl-yellow-b);
+    }
+    .qnbutton {
+        background-color: var(--color-dl-card-black);
+    }
+    span.qnbutton {
+        color: var(--color-dl-yellow-a);
+    }
+}
+
+.jschooser.dark-dashboard .choosercontainer #chooseform {
+    .instruction,
+    .typesummary {
+        background-color: var(--color-dl-bg-black);
+    }
+    .alloptions .option .typename {
+        color: var(--warning);
+    }
+}
+
+body#page-question-type-match.dark-dashboard {
+    div[id^=fitem_id_][id*=subquestions_],
+    div[id^=fitem_id_][id*=subanswers_] {
+        background: var(--color-dl-grey-b);
+    }
+}
+
+#page-mod-quiz-edit.dark-dashboard {
+    ul.slots {   
+        li.section {
+            .content {
+                padding: 1px 10px;
+                border-radius: 0.5rem;
+                background-color: var(--color-dl-grey-b);
+                .pagenumber {
+                    background-color: transparent;
+                }
+            }
+            li.activity {
+                border-radius: 5px;
+                background: var(--color-dl-bg-black);
+                .instancemaxmarkcontainer {
+                    background: var(--color-dl-grey-b);
+                }
+            }
+        }
+        .activityinstance {
+            img.activityicon {
+                margin-top: 6px;
+                margin-right: 5px;
+                background-color: white;
+                padding: 2px 4px;
+            }
+        }
+    }
+    .section {
+        .activity {
+            .actions {
+                background: var(--color-dl-bg-black);
+            }
+        }
+    }
+    .slotnumber {
+        background-color: var(--color-dl-grey-b);
+    }
+    .mod-quiz-edit-content {
+        h2 {
+            display: block;
+        }
+    }
+   .btn-secondary {
+        background-color: var(--secondary);
+        color: var(--color-dl-grey-b);
+    }
+}
+#page-mod-quiz-edit .section .activity .actions {
+    position: inherit;
+    white-space: nowrap;
+    background: var(--color-dl-bg-black);
+    padding: 0.1em 0;
+}
+#page-mod-assign-grading.path-mod-assign.dark-dashboard { 
+    .gradingtable {
+        tr.unselectedrow {
+            td {
+                background-color: transparent;
+            }
+        }
+    }
+}
+.path-backup.dark-dashboard {
+    .mform .root_setting:nth-of-type(even),
+    .path-backup .mform .grouped_settings:nth-of-type(even) {
+        background-color: var(--color-dl-grey-b);
+    }
+}
+.dark-dashboard {
+    .course-content {
+        .course-section {
+            border-bottom: none;
+        }
+        .course-section .course-section-header {
+            background-color:  rgba(75, 131, 251, 0.1);
+            padding: 15px;
+            border-radius: 5px;
+            .btn {
+                color: var(--color-dl-yellow-b);
+                &.btn-icon {
+                    &:hover, &:focus {
+                        background-color: var(--color-dl-grey-b);
+                    }
+                }
+
+            }
+        }
+        .section.course-section.main.section-summary {
+            border-bottom: 1px solid #dee2e6;
+        }
+        h3 {
+            font-weight: 500;
+        }
+    }
+    .path-backup {
+        .backup-restore {
+            .backup-section {
+                background-color: var(--color-dl-bg-black-dark);
+                border: 1px solid var(--color-dl-yellow-a);
+            }
+        }
+    }
+
+    .path-mod {
+        .activity-information {
+            .completion-info {
+                position: relative;
+                z-index: 2;
+            }
+        }
+        .activity-header:not(:empty) {
+            background-color: var(--color-dl-bg-black-dark);
+        }
+    }
+
+    .description .course-description-item {
+        background-color: initial;
+    }
+    .editor_atto_content_wrap {
+        background-color: var(--color-dl-card-black);
+        color: #333;
+    }
+    .editor_atto_notification .atto_info {
+        background-color: var(--color-dl-grey-b);
+    }
+    .course-header-txt {
+        background-color: var(--color-dl-bg-black-dark);
+    }
+    .chip {
+        background-color: var(--color-dl-grey-b);
+    }
+    .coursebox {
+        padding: 0.9rem;
+        overflow: hidden;
+        margin-bottom: 15px;
+        &.even, &.first, &.last {
+            background-color: var(--color-dl-card-black)!important;
+            border-radius: 0.5rem;
+        }
+    }
+    .list-group-item {
+        background-color: var(--color-dl-card-black)!important;
+        border: 6px solid var(--color-dl-bg-black)!important;
+    }
+    .que {
+        .info {
+            background-color: var(--color-dl-grey-b);
+            border: 1px solid var(--color-dl-yellow-b);
+            border-radius: 0.5rem;
+        }
+        .formulation {
+            color: var(--color-dl-green);
+            background-color: var(--color-dl-bg-black-dark);
+            border: 1px solid var(--color-dl-yellow-b);
+        }
+    }
+    .courseindex {
+        .courseindex-item:hover,
+        .courseindex-item:focus {
+                color: blue;
+        }
+    }
+    #quiz-timer-wrapper #quiz-timer {
+        background-color: var(--color-dl-card-black);
+    }
+}

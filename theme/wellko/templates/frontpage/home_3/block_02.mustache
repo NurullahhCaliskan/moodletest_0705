@@ -1,0 +1,65 @@
+<script>
+    setTimeout(() => {
+        let lang = document.querySelector('html').lang;
+        
+        if(lang != 'en' && lang != 'tr') {
+            lang = 'en';
+        }
+
+        
+        document.querySelectorAll('.multilang[lang='+lang+']').forEach((e) => {
+            e.style.display = "inline-block";
+        })
+    }, 200);
+</script>
+<style>
+.bg-banner:before {
+    background-image: linear-gradient(to right, #040c2599, transparent) !important; 
+}
+</style>
+<div id="h3_block02" class="bg-banner relative z-1" style="background-image: url({{frontpageimglink}}banner/coaching-banner-2.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-lg-10 relative z-1">
+                    <div class="banner_text" >
+                        <h1 class="title thm-color-white wow fadeInDown" style="padding-bottom:120px !important;">
+                            <span lang="en" class="multilang" style="display:none;font-size:56px;">{{h3_02_block_headline_1}}</span>
+                            <span lang="tr" class="multilang" style="display:none;font-size:56px;">{{h3_02_block_headline_2}}</span> 
+                            <span lang="en" class="multilang" style="display:none;font-size:40px;">{{h3_02_block_header_1}}</span>
+                            <span lang="tr" class="multilang" style="display:none;font-size:40px;">{{h3_02_block_header_2}}</span></h1>
+                        <!--<form class="wow fadeInUp" action="{{h3_02_block_btn_link}}">
+                            <div class="input-group">
+                                <span class="input-group-preappend">
+                                    <i class="fal fa-search"></i>
+                                </span>
+                                <input type="text" name="search" class="form-control" placeholder="" autocomplete="off" required="">
+                                <div class="input-group-append">
+                                    <button type="submit" class="thm-btn bg-thm-color-two thm-color-two-shadow btn-rectangle ml-0">
+                                        <span lang="en" class="multilang" style="display:none;">Search Now</span>
+                                        <span lang="tr" class="multilang" style="display:none;">Ara</span>
+                                        <i class="fal fa-chevron-right ml-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                        </form> -->
+                    </div>
+                    <img src="{{frontpageimglink}}elements/element_19.png" alt="element" class="element_1 slideRightTwo">
+                    <img src="{{frontpageimglink}}elements/element_10.png" alt="element" class="element_2 zoom-fade">
+                    <img src="{{frontpageimglink}}elements/element_21.png" alt="element" class="element_3 rotate_elem">
+                    <img src="{{frontpageimglink}}elements/element_20.png" alt="element" class="element_4 rotate_elem">
+                </div>
+            </div>
+            <div class="think_box wow fadeInDown">
+                <img src="{{frontpageimglink}}elements/think_element.png" alt="element" class="think_element">
+                <div class="text_box">
+                    <p class="top mb-0"><span><span lang="en" class="multilang" style="display:none;">{{h3_02_block_speech_1}}</span>
+                                    <span lang="tr" class="multilang" style="display:none;">{{h3_02_block_speech_5}}</span></span><span lang="en" class="multilang" style="display:none;">{{h3_02_block_speech_2}}</span>
+                                    <span lang="tr" class="multilang" style="display:none;">{{h3_02_block_speech_6}}</span></p>
+                    <p class="bottom mb-0"><span lang="en" class="multilang" style="display:none;">{{h3_02_block_speech_3}}</span>
+                                    <span lang="tr" class="multilang" style="display:none;">{{h3_02_block_speech_7}}</span><br><span lang="en" class="multilang" style="display:none;">{{h3_02_block_speech_4}}</span>
+                                    <span lang="tr" class="multilang" style="display:none;">{{h3_02_block_speech_8}}</span></p>
+                </div>
+            </div>
+        </div>
+    </div>

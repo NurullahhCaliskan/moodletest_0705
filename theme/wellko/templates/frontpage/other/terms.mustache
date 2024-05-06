@@ -1,0 +1,40 @@
+{{> theme_wellko/frontpage/navbar/header3 }}
+<!-- Subheader Start -->
+{{< theme_wellko/frontpage/page/page_subhdr }}
+    
+    {{$page_subhdimg_0}}
+        {{#terms_subhdimg}}style="background-image: url({{frontpageimglink}}{{terms_subhdimg}});"{{/terms_subhdimg}}
+        {{^terms_subhdimg}}style="padding: 70px 0 28px;"{{/terms_subhdimg}}
+    {{/page_subhdimg_0}}    
+
+    {{$page_subhdimg_1}}
+        {{^terms_subhdimg}}style="font-size: 45px;"{{/terms_subhdimg}}
+    {{/page_subhdimg_1}}
+
+    {{$page_subhdimg_2}}
+        {{{terms_header1}}}
+    {{/page_subhdimg_2}}
+
+    {{$page_subhdimg_3}}
+        {{#terms_subhdimg}}
+            {{> theme_wellko/frontpage/page/page_subhdr_elm }}
+        {{/terms_subhdimg}}
+    {{/page_subhdimg_3}}
+
+{{/ theme_wellko/frontpage/page/page_subhdr }}
+<!-- Subheader End -->
+<!-- Plane Start -->
+<div class="post ">
+    <div class="container relative z-1">
+        <div class="row justify-content-center">
+            <div class="col-xl-9 col-lg-11 relative z-1">
+                {{{terms_caption}}}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Plane End -->
+
+{{#footer_enabled}}
+    {{> theme_wellko/frontpage/other/footer03 }}
+{{/footer_enabled}}

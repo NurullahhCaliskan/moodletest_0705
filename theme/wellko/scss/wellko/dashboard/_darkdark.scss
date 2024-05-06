@@ -1,0 +1,40 @@
+/* Dark Light Button */
+
+.dl-dashboard {
+  .bx-moon,
+  .bx-bulb,
+  .bxs-bulb {
+    color: var(--light);
+  }
+  #dashboarddarksidenav {
+      position: absolute;
+      padding: 4px 4px 0;
+      top: -3px;
+      transition: 0.3s;
+      border-radius: 0 0 15px 15px;
+      background-color: var(--color-dl-grey-b);
+      z-index: 9999;
+  }
+  #dashboarddarksidenav:hover {
+    top: 0;
+  }
+  #darki {
+    font-size: 25px;
+  }
+}
+.dark-dashboard {
+  .dl-dashboard {
+    .bx-sun,
+    .bxs-sun,
+    .bxs-bulb,
+    .bx-bulb {
+      color: var(--color-dl-yellow-b);
+    }
+  }
+  #dashboarddarksidenav {
+    background-color: var(--orange);
+    border: 1px solid var(--green);
+  }
+}
+
+/* Dark light side bar end*/

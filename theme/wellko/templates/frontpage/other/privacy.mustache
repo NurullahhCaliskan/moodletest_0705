@@ -1,0 +1,56 @@
+<script>
+    setTimeout(() => {
+        let lang = document.querySelector('html').lang;
+        
+        if(lang != 'en' && lang != 'tr') {
+            lang = 'en';
+        }
+
+        
+        document.querySelectorAll('.multilang[lang='+lang+']').forEach((e) => {
+            e.style.display = "inline-block";
+        })
+    }, 100);
+</script>
+
+{{> theme_wellko/frontpage/navbar/header3 }}
+<!-- Subheader Start -->
+{{< theme_wellko/frontpage/page/page_subhdr }}
+    
+    {{$page_subhdimg_0}}
+        {{#privacy_subhdimg}}style="background-image: url({{frontpageimglink}}{{privacy_subhdimg}});"{{/privacy_subhdimg}}
+        {{^privacy_subhdimg}}style="padding: 70px 0 28px;"{{/privacy_subhdimg}}
+    {{/page_subhdimg_0}}    
+
+    {{$page_subhdimg_1}}
+        {{^privacy_subhdimg}}style="font-size: 45px;"{{/privacy_subhdimg}}
+    {{/page_subhdimg_1}}
+
+    {{$page_subhdimg_2}}
+        {{privacy_header1}}
+    {{/page_subhdimg_2}}
+
+    {{$page_subhdimg_3}}
+        {{#privacy_subhdimg}}
+            {{> theme_wellko/frontpage/page/page_subhdr_elm }}
+        {{/privacy_subhdimg}}
+    {{/page_subhdimg_3}}
+
+{{/ theme_wellko/frontpage/page/page_subhdr }}
+<!-- Subheader End -->
+<!-- Plane Start -->
+<div class="post ">
+    <div class="container relative z-1">
+        <div class="row justify-content-center">
+            <div class="col-xl-9 col-lg-11 relative z-1">
+            <span lang="en" class="multilang" style="display:none;">{{privacy_caption_1}}</span>
+            <span lang="tr" class="multilang" style="display:none;">{{privacy_caption_2}}</span> 
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Plane End -->
+
+{{#footer_enabled}}
+    {{> theme_wellko/frontpage/other/footer03 }}
+{{/footer_enabled}}

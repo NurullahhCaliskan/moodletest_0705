@@ -1,0 +1,136 @@
+<footer id="other_footer03" class="footer style_2 style_3 z-1" style="background-color: #2e4142;background-image:url({{frontpageimglink}}elements/element_18.png);">
+    <div class="container relative z-1">
+        <div class="footer_top section-padding">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="ft_widget ft_about wow fadeInDown">
+                        <a href="#" class="logo">
+                            {{#footer_logo_sm}}
+                            {{#output.get_compact_logo_url}}
+                                <img src="{{frontpageimglink}}logo-white.png" alt="{{sitename}}" class="image-fit">
+                            {{/output.get_compact_logo_url}} 
+                            {{^output.get_compact_logo_url}}
+                                <div class="footer-site-name">
+                                    <div class="h1">
+                                    <span lang="en" class="multilang" style="display:none;">{{footer_col1_header_1}}</span>
+                        <span lang="tr" class="multilang" style="display:none;">{{footer_col1_header_2}}</span>
+                                    </div>
+                                </div>
+                            {{/output.get_compact_logo_url}}
+                            {{/footer_logo_sm}}
+
+                            {{#footer_logo}}
+                            {{#output.get_logo_url}}     
+                                <img src="{{frontpageimglink}}logo-white.png" alt="{{sitename}}">
+                            {{/output.get_logo_url}} 
+                            {{^output.get_logo_url}}
+                                <div class="footer-site-name">
+                                    <div class="h1">
+                                    <span lang="en" class="multilang" style="display:none;">{{footer_col1_header_1}}</span>
+                        <span lang="tr" class="multilang" style="display:none;">{{footer_col1_header_2}}</span>
+                                    </div>
+                                </div> 
+                            {{/output.get_logo_url}} 
+                            {{/footer_logo}}
+
+                            {{^footer_logo_sm}}
+                            {{^footer_logo}}
+                            <div class="footer-site-name">
+                                <div class="h1">
+                                <span lang="en" class="multilang" style="display:none;">{{footer_col1_header_1}}</span>
+                                <span lang="tr" class="multilang" style="display:none;">{{footer_col1_header_2}}</span>
+                                </div>
+                            </div> 
+                            {{/footer_logo}} 
+                            {{/footer_logo_sm}}  
+                        </a>
+                        
+                            {{{footer_col1_caption}}}
+                        
+                        {{{footer_social}}}
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="ft_widget ft_menu wow fadeInUp">
+                        <h6 class="ft-title">
+                        <span lang="en" class="multilang" style="display:none;">{{footer_col2_header_1}}</span>
+                        <span lang="tr" class="multilang" style="display:none;">{{footer_col2_header_2}}</span>
+                        </h6>
+                        <ul>
+                            {{{footer_col2_link}}}
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="ft_widget ft_menu wow fadeInDown">
+                        <h6 class="ft-title">
+                        <span lang="en" class="multilang" style="display:none;">{{footer_col3_header_1}}</span>
+                        <span lang="tr" class="multilang" style="display:none;">{{footer_col3_header_2}}</span>
+                        </h6>
+                        <ul>
+                            {{{footer_col3_link}}}
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="ft_widget ft_newsletter wow fadeInUp" >
+                        <h6 class="ft-title">
+                        <span lang="en" class="multilang" style="display:none;">{{footer_col4_header_1}}</span>
+                        <span lang="tr" class="multilang" style="display:none;">{{footer_col4_header_2}}</span>
+                        </h6>
+                        <p class="mb-xl-20">
+                        <span lang="en" class="multilang" style="display:none;">{{footer_col4_caption_1}}</span>
+                        <span lang="tr" class="multilang" style="display:none;">{{footer_col4_caption_2}}</span>
+                        </p>
+                        {{#footer_email}}
+                        <script>
+                            setTimeout(() => {
+                                let currentLang = document.querySelector('html').lang;
+                                document.getElementById('subscription-email-input').placeholder =
+                                currentLang == 'en' ? '{{footer_col4_caption_3}}' : '{{footer_col4_caption_4}}';
+                            
+                                document.getElementById('subscribe-now-button').innerHTML =
+                                currentLang == 'en' ? '{{footer_col4_caption_5}}' : '{{footer_col4_caption_6}}';
+                            }, 100);
+                        </script>
+                        <form action="../../local/contact/index.php" method="post">
+                            <input id="subscription-email-input" type="email" name="email"
+                             placeholder="" 
+                                autocomplete="off" required="">
+                            <button type="submit" name="submit" 
+                                class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle">
+                                <span id="subscribe-now-button">Subscribe Now </span>
+                                <i class="fal fa-chevron-right ml-2"></i>
+                            </button>
+                            <input type="hidden" name="name" value="FOOTER-3">
+                            <input type="hidden" name="message" value="">
+                            <input type="hidden" name="sesskey" value="{{sesskey}}">
+                        </form>
+                        {{/footer_email}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        "><img src="/images/iyzico_ile_ode_horizontal_white.png" style="width: 200px;"></div>
+        <div class="footer_bottom d-flex justify-content-center">
+            {{> theme_wellko/frontpage/setup-button }}  
+            <p class="mb-0">
+                {{{footer_copyright}}}
+            </p>
+        </div>
+        <img src="{{frontpageimglink}}elements/element_16.png" alt="element" class="element_3 rotate_elem">
+        <div class="arrows to_up slideTop">
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+        </div>
+    </div>
+    {{> theme_wellko/frontpage/theme }}
+</footer>

@@ -1,0 +1,85 @@
+<footer id="other_footer01" class="footer">
+    <div class="container">
+        <div class="footer_top section-padding">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="ft_widget ft_about wow fadeInDown">
+                        <a href="#" class="logo">
+                            {{#footer_logo_sm}}
+                            {{#output.get_compact_logo_url}}
+                                <img src="{{output.get_compact_logo_url}}" alt="{{sitename}}">
+                            {{/output.get_compact_logo_url}} 
+                            {{^output.get_compact_logo_url}}
+                                <div class="footer-site-name">
+                                    <div class="h1">{{{footer_col1_header}}}</div>
+                                </div>
+                            {{/output.get_compact_logo_url}}
+                            {{/footer_logo_sm}}
+
+                            {{#footer_logo}}
+                            {{#output.get_logo_url}}     
+                                <img src="{{output.get_logo_url}}" alt="{{sitename}}">
+                            {{/output.get_logo_url}} 
+                            {{^output.get_logo_url}}
+                                <div class="footer-site-name">
+                                    <div class="h1">{{{footer_col1_header}}}</div>
+                                </div> 
+                            {{/output.get_logo_url}} 
+                            {{/footer_logo}}
+
+                            {{^footer_logo_sm}}
+                            {{^footer_logo}}
+                            <div class="footer-site-name">
+                                <div class="h1">{{{footer_col1_header}}}</div>
+                            </div> 
+                            {{/footer_logo}} 
+                            {{/footer_logo_sm}}  
+
+                        </a>
+                        
+                        {{{footer_col1_caption}}}
+                        
+                        {{{footer_social}}}
+                     </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="ft_widget ft_menu wow fadeInUp">
+                        <h6 class="ft-title">{{footer_col2_header}}</h6>
+                        <ul>
+                            {{{footer_col2_link}}}
+                        </ul>    
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="ft_widget ft_menu wow fadeInDown">
+                        <h6 class="ft-title">{{footer_col3_header}}</h6>
+                        <ul>
+                            {{{footer_col3_link}}}
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="ft_widget ft_apps wow fadeInUp" >
+                        <h6 class="ft-title">{{footer_col4_header}}</h6>
+                        <p class="mb-xl-20">{{{footer_col4_caption}}}</p>
+                        {{#footer_appimg}}
+                        <a href="{{footer_appimg_link}}" target="_blank" class="app_img">
+                            <img src="{{frontpageimglink}}google_store.jpg" alt="img">
+                        </a>
+                        <a href="{{footer_appimg_link_1}}" target="_blank" class="app_img">
+                            <img src="{{frontpageimglink}}apple_store.jpg" alt="img">
+                        </a>
+                        {{/footer_appimg}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom d-flex justify-content-center">
+            {{> theme_wellko/frontpage/setup-button }}         
+            <p class="mb-0">
+                {{{footer_copyright}}}
+            </p>
+            {{> theme_wellko/frontpage/theme }}
+        </div>
+    </div>
+</footer>

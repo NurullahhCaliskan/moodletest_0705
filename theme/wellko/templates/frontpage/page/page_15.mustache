@@ -1,0 +1,356 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    Page Course Details.
+}}
+{{> theme_wellko/frontpage/navbar/header3 }}
+<!-- Subheader Start -->
+{{< theme_wellko/frontpage/page/page_subhdr }}
+    
+    {{$page_subhdimg_0}}
+        {{#page_15_page_subhdimg}}style="background-image: url({{frontpageimglink}}{{page_15_page_subhdimg}});"{{/page_15_page_subhdimg}}
+        {{^page_15_page_subhdimg}}style="padding: 70px 0 28px;"{{/page_15_page_subhdimg}}
+    {{/page_subhdimg_0}}    
+
+    {{$page_subhdimg_1}}
+        {{^page_15_page_subhdimg}}style="font-size: 45px;"{{/page_15_page_subhdimg}}
+    {{/page_subhdimg_1}}
+
+    {{$page_subhdimg_2}}
+        {{page_15_page_title}}
+    {{/page_subhdimg_2}}
+
+    {{$page_subhdimg_3}}
+        {{#page_15_page_subhdimg}}
+            {{> theme_wellko/frontpage/page/page_subhdr_elm }}
+        {{/page_15_page_subhdimg}}
+    {{/page_subhdimg_3}}
+
+{{/ theme_wellko/frontpage/page/page_subhdr }}
+<!-- Subheader End -->
+<!-- Course details Start -->
+{{#page_15_s1_enabled}}
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="course_details mb-md-80 wow fadeInDown">
+                    <ul class="nav nav-tabs style_4">
+                        <li class="nav-item">
+                            <a href="#tab1" class="nav-link active" data-toggle="tab">{{page_15_s1_tab_1}}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#tab2" class="nav-link" data-toggle="tab">{{page_15_s1_tab_2}}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#tab3" class="nav-link" data-toggle="tab">{{page_15_s1_tab_3}}</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="tab1">
+                            <div class="desc_box">
+                                <h2 class="title">{{page_15_s1_course_fullname}}</h2>
+                                <div class="author">
+                                {{#page_15_s1_course_userpicture}}
+                                    <img src="{{page_15_s1_course_userpicture}}" alt="img" class="image-fit">
+                                    <a href="{{page_15_s1_team_detail_lnk}}" class="thm-color-one">{{page_15_s1_course_teachername}}</a>
+                                {{/page_15_s1_course_userpicture}}
+                                </div>
+                                <div class="detail_img mb-xl-30">
+                                    {{#page_15_s1_course_imgurl}}
+                                    <img src="{{page_15_s1_course_imgurl}}" alt="img" class="image-fit rounded">
+                                    {{/page_15_s1_course_imgurl}}
+                                </div>
+                                <p>{{{page_15_s1_course_summary}}}</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab2">
+                            
+                            {{{page_15_s1_curriculum}}}
+
+                        </div>
+                        <div class="tab-pane fade" id="tab3">
+                            <!-- Post Comments Start -->
+                            <h4>{{page_15_s1_cmd_header}}</h4>
+                            <ul class="comments mb-xl-30">
+                                {{#page_15_s1_comment}}
+                                <li class="comment">
+                                    <div class="comment_img">
+                                        <img src="{{userimg}}" alt="img" class="image-fit userpicture">
+                                    </div>
+                                    <div class="comment_text">
+                                        <h6 class="mb-0">{{username}}</h6>
+                                        <div class="comment_date">{{timecreated}}</div>
+                                        <p class="mb-0 d-flex">{{content}} </p>
+                                    </div>
+                                </li>
+                                {{/page_15_s1_comment}}
+                            </ul>
+                            <!-- Post Comments End -->
+                            <!-- Comment Form Start -->
+                            <div class="comment_form">
+                                <h4>{{page_15_s1_form_header}}</h4>
+                                <form action="{{page_15_s1_form_button_lnk}}" method="post">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" name="name" placeholder="{{page_15_s1_form_text_1}}" class="form-control form-control-custom style_2" autocomplete="off">
+                                                <i class="fal fa-user"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="email" name="email" placeholder="{{page_15_s1_form_text_2}}" class="form-control form-control-custom style_2" autocomplete="off">
+                                                <i class="fal fa-envelope"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <textarea rows="5" name="message" placeholder="{{page_15_s1_form_text_3}}" class="form-control form-control-custom style_2" autocomplete="off"></textarea>
+                                                <i class="fal fa-pen"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <button type="submit" name="submit" class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle">{{page_15_s1_form_button}}
+                                                <i class="fal fa-chevron-right ml-2"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="f-name" value="COURSE COMMENT FORM">
+                                    <input type="hidden" name="sesskey" value="{{sesskey}}">
+                                </form>
+                            </div>
+                            <!-- Comment Form End -->
+                            <!-- post details -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <div class="sidebar_widget info_widgets wow fadeInUp">
+                        <ul>
+                            <li class="active">
+                                <div class="left-side">
+                                    <i class="fal fa-usd-circle"></i>
+                                    <h6 class="mb-0">{{page_15_page_sidebar_info_header_1}}</h6>
+                                </div>
+                                <div class="right-side">
+                                    {{page_15_s1_course_currency}} {{page_15_s1_course_cost}}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left-side">
+                                    <i class="fal fa-user-circle"></i>
+                                    <h6 class="mb-0">{{page_15_page_sidebar_info_header_2}}</h6>
+                                </div>
+                                <div class="right-side">
+                                    {{page_15_s1_course_teachername}}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left-side">
+                                    <i class="fal fa-book"></i>
+                                    <h6 class="mb-0">{{page_15_page_sidebar_info_header_3}}</h6>
+                                </div>
+                                <div class="right-side">
+                                    {{page_15_s1_course_format}}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left-side">
+                                    <i class="fal fa-user-graduate"></i>
+                                    <h6 class="mb-0">{{page_15_page_sidebar_info_header_4}}</h6>
+                                </div>
+                                <div class="right-side">
+                                    {{page_15_s1_course_studentscount}} {{#str}}students, moodle{{/str}}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left-side">
+                                    <i class="fal fa-calendar-alt"></i>
+                                    <h6 class="mb-0">{{page_15_page_sidebar_info_header_5}}</h6>
+                                </div>
+                                <div class="right-side">
+                                    {{page_15_s1_course_start_date}}
+                                </div>
+                            </li>
+                        </ul>
+                        <hr>
+                        <cite class="mb-xl-20">{{page_15_page_enroll_explanation}} </cite>
+                        <a href="{{page_15_s1_course_courselink}}" class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle">
+                            {{page_15_page_enroll_button}} 
+                            <i class="fal fa-chevron-right ml-2"></i>
+                        </a>
+                    </div>
+                    <div class="sidebar_widget recent_widgets wow fadeInUp">
+                        <h5 class="widget_title">{{page_15_page_sidebar_header}}</h5>
+                        <ul>
+                            {{#h1_08_block}}
+                            <li>
+                                {{#imgurl}}
+                                <div class="image">
+                                    <img src="{{imgurl}}" alt="img" class="image-fit">
+                                </div>
+                                {{/imgurl}}
+                                <div class="text">
+                                    <h6 class="mb-0">
+                                        <a href="{{coursed_detail_lnk}}">{{fullname}}</a>
+                                    </h6>
+                                    <p class="mb-0"><strong>{{#str}}by, h5p{{/str}} </strong><a href="{{coursed_detail_lnk}}">{{teachername}}</a></p>
+                                </div>
+                            </li>
+                            {{/h1_08_block}}   
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{/page_15_s1_enabled}}
+<!-- Course details End -->
+<!-- Plane Start -->
+{{#page_15_s2_enabled}}
+<div class="bg-thm-color-two plane_box relative z-1">
+    <div class="container relative z-1">
+        <div class="row justify-content-center">
+            <div class="col-xl-9 col-lg-11 relative z-1">
+                <img src="{{frontpageimglink}}elements/element_6.png" class="element_1 rotate_elem" alt="Element">
+                <h2 class="thm-color-white">{{page_15_s2_caption}}</h2>
+            </div>
+        </div>
+        <img src="{{frontpageimglink}}elements/element_7.png" class="element_2 zoom-fade" alt="Element">
+    </div>
+</div>
+{{/page_15_s2_enabled}}
+<!-- Plane End -->
+<!-- Course list Start -->
+{{#page_15_s3_enabled}}
+<section class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title wow fadeInUp">
+                    <p class="subtitle">
+                        <i class="fal fa-book"></i>
+                        {{page_15_s3_headline}}
+                    </p>
+                    <h3 class="title">{{page_15_s3_header}}</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Coach block -->
+            {{#h1_08_block}}
+            <div class="col-xl-4 col-md-6">
+                <div class="coach_block wow fadeInDown" data-wow-delay=".{{counter}}s">
+                    <div class="coach_img">
+                        {{#imgurl}}
+                        <img src="{{imgurl}}" alt="img" class="image-fit">
+                        <div class="coach_badges">
+                            <span class="tag_badge bg-thm-color-four">{{cost}}{{currency}}</span>
+                        </div>
+                        {{/imgurl}}
+                        <a href="{{coursed_detail_lnk}}" class="thm-btn thm-color-two bg-thm-color-white thm-color-two-shadow btn-circle link">
+                            <i class="fal fa-chevron-right"></i>
+                        </a>
+                    </div>
+                    <div class="coach_caption">
+                        <div class="coach_meta">
+                            <a href="{{categorylink}}" class="coach_cat thm-btn bg-thm-color-three thm-color-three-shadow btn-rounded">{{categoryName}}</a>
+                            <div class="ratings">
+                                <i class="fal fa-star active"></i>
+                                <i class="fal fa-star active"></i>
+                                <i class="fal fa-star active"></i>
+                                <i class="fal fa-star active"></i>
+                                <i class="fal fa-star"></i>
+                            </div>
+                        </div>
+                        <h5 class="title mb-xl-20">
+                            <a href="{{coursed_detail_lnk}}">
+                                {{fullname}}
+                            </a>
+                        </h5>
+                        <div class="author">
+                            {{#userpicture}}
+                            <img src="{{userpicture}}" alt="img" class="image-fit">
+                            <a href="{{team_detail_lnk}}" class="thm-color-one">{{teachername}}</a>
+                            {{/userpicture}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/h1_08_block}}
+            <!-- Coach block -->
+        </div>
+    </div>
+</section>
+{{/page_15_s3_enabled}}
+<!-- Course list End -->
+<!-- Cta Start -->
+{{#page_15_s4_enabled}}
+<section class="cta_box style_2">
+    <div class="container relative z-2">
+        <div class="bg-thm-color-two cta_box_inner z-2 mb-negative">
+            <img src="{{frontpageimglink}}elements/shape.png" alt="shape" class="shape_1 zoom-fade">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6">
+                    <div class="text_block wow fadeInLeft">
+                        <div class="section-title left-align white">
+                            <p class="subtitle">
+                            <i class="fal fa-book"></i>
+                                {{page_15_s4_headline}}
+                            </p>
+                            <h3 class="title">{{page_15_s4_header}}</h3>
+                            <a href="{{page_15_s4_button_lnk}}" class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle">
+                                {{page_15_s4_button}} 
+                                <i class="fal fa-chevron-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="image_box relative z-1 wow fadeInRight">
+                        <img src="{{frontpageimglink}}elements/square_shape.png" alt="shape" class="shape_2 rotate_elem">
+                        <img src="{{frontpageimglink}}cta_image.png" alt="img" class="image-fit">
+                        <div class="arrows slideRight">
+                            <div class="arrow"></div>
+                            <div class="arrow"></div>
+                            <div class="arrow"></div>
+                            <div class="arrow"></div>
+                            <div class="arrow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrows to_up slideTop">
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+        </div>
+    </div>
+</section>
+{{/page_15_s4_enabled}}
+<!-- Cta End -->
+{{#footer_enabled}}
+    {{> theme_wellko/frontpage/other/footer03 }}
+{{/footer_enabled}}
+

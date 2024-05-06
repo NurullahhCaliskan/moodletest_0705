@@ -1,0 +1,39 @@
+    <section id="h2_block08">
+        <div class="container">
+            <div class="testi_bg wow fadeInRight" style="background-image: url({{frontpageimglink}}shape_img.png);">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="section">
+                            <div class="section-title left-align wow fadeInUp">
+                                <p class="subtitle">
+                                    <i class="fal fa-book"></i>
+                                    {{{h2_08_block_headline}}}
+                                </p>
+                                <h3 class="title">{{{h2_08_block_header}}} {{{h2_08_block_maintitle}}}</h3>
+                            </div>
+                            <div class="testimonial_slider_single">
+                                <!-- item -->
+                                {{#h2_08_block}}
+                                <div class="slide-item">
+                                    <div class="testimonial_item style_2">
+                                        <p class="comment">{{comment}}</p>
+                                        <div class="author">
+                                            <div class="image">
+                                                <img src="{{frontpageimglink}}author/{{counter}}.jpg" alt="img" class="image-fit">
+                                            </div>
+                                            <div class="text">
+                                                <h6 class="mb-0">{{name}}</h6>
+                                                <p class="mb-0 font-weight-bold thm-color-two">{{job}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{/h2_08_block}}
+                                <!-- item -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

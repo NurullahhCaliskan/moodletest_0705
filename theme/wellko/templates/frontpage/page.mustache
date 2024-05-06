@@ -1,0 +1,115 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template theme_wellko/frontpage/home2
+
+    Theme front page builder.
+}}
+{{> theme_wellko/frontpage/head }}
+<body {{{ bodyattributes }}}>
+    <!-- Start preloader -->
+    {{> theme_wellko/frontpage/preloader }}
+    <!-- End preloader -->
+    {{> core/local/toast/wrapper}}
+
+    <!-- HOME ONE BLOCKS -->
+    <div class="frontpage_overflow">
+        {{#page_testimonials_enabled}}
+            {{> theme_wellko/frontpage/page/page_01 }}
+        {{/page_testimonials_enabled}}
+        {{#page_about_enabled}}
+            {{> theme_wellko/frontpage/page/page_02 }}
+        {{/page_about_enabled}}
+        {{#page_events_enabled}}
+            {{> theme_wellko/frontpage/page/page_03 }}
+        {{/page_events_enabled}}
+        {{#page_videos_enabled}}
+            {{> theme_wellko/frontpage/page/page_04 }}
+        {{/page_videos_enabled}}
+        {{#page_services_enabled}}
+            {{> theme_wellko/frontpage/page/page_05 }}
+        {{/page_services_enabled}}
+        {{#page_teams_enabled}}
+            {{> theme_wellko/frontpage/page/page_06 }}
+        {{/page_teams_enabled}}
+        {{#page_pricing_enabled}}
+            {{> theme_wellko/frontpage/page/page_07 }}
+        {{/page_pricing_enabled}}
+        {{#page_faqs_enabled}}
+            {{> theme_wellko/frontpage/page/page_08 }}
+        {{/page_faqs_enabled}}
+        {{#page_aboutme_enabled}}
+            {{> theme_wellko/frontpage/page/page_09 }}
+        {{/page_aboutme_enabled}}
+        {{#page_contact_enabled}}
+            {{> theme_wellko/frontpage/page/page_10 }}
+        {{/page_contact_enabled}}
+        {{#page_courses_enabled}}
+            {{> theme_wellko/frontpage/page/page_11 }}
+        {{/page_courses_enabled}}
+        {{#page_blog_grid_enabled}}
+            {{> theme_wellko/frontpage/page/page_12 }}
+        {{/page_blog_grid_enabled}}
+        {{#page_blog_list_enabled}}
+            {{> theme_wellko/frontpage/page/page_13 }}
+        {{/page_blog_list_enabled}}
+        {{#page_blog_details_enabled}}
+            {{> theme_wellko/frontpage/page/page_14 }}
+        {{/page_blog_details_enabled}}
+        {{#page_course_details_enabled}}
+            {{> theme_wellko/frontpage/page/page_15 }}
+        {{/page_course_details_enabled}}
+        {{#page_team_details_enabled}}
+            {{> theme_wellko/frontpage/page/page_16 }}
+        {{/page_team_details_enabled}}
+        {{#page_portfolio_grid_enabled}}
+            {{> theme_wellko/frontpage/page/page_17 }}
+        {{/page_portfolio_grid_enabled}}
+        {{#page_portfolio_gallery_enabled}}
+            {{> theme_wellko/frontpage/page/page_18 }}
+        {{/page_portfolio_gallery_enabled}}
+        {{#page_portfolio_masonry_enabled}}
+            {{> theme_wellko/frontpage/page/page_19 }}
+        {{/page_portfolio_masonry_enabled}}
+        {{#page_portfolio_details_enabled}}
+            {{> theme_wellko/frontpage/page/page_20 }}
+        {{/page_portfolio_details_enabled}}
+
+        {{#other_terms_enabled}}
+            {{> theme_wellko/frontpage/other/terms }}
+        {{/other_terms_enabled}}
+        {{#other_privacy_enabled}}
+            {{> theme_wellko/frontpage/other/privacy }}
+        {{/other_privacy_enabled}}
+
+        <!-- Start dark-light -->
+        {{> theme_wellko/frontpage/darklight }}
+        <!-- End dark-light -->
+        {{> theme_wellko/frontpage/other/aside_m }}
+        <!-- Start go to top -->
+        {{> theme_wellko/frontpage/gototop }}
+        <!-- End go to top -->
+        {{> theme_wellko/frontpage/setup}}
+    </div>
+</body>   
+</html>
+{{#js}}
+    M.util.js_pending('theme_boost/loader');
+    require(['theme_boost/loader'], function() {
+        M.util.js_complete('theme_boost/loader');
+    });
+{{/js}}

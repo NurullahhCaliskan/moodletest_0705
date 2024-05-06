@@ -1,0 +1,56 @@
+    <section id="h2_block06" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="section-title left-align wow fadeInUp">
+                        <p class="subtitle">
+                            <i class="fal fa-book"></i>
+                            {{h2_06_block_headline}}
+                        </p>
+                        <h3 class="title">{{h2_06_block_header}}</h3>
+                        <p>{{h2_06_block_maintitle}}</p>
+                    </div>
+                    <div class="multi_progress_bar mb-xl-30 mb-md-80 wow fadeInDown">
+                        <div class="progress_box">
+                            <div class="circle_bar" data-percent="{{h2_06_block_circle_num_1}}" data-track-color="#ecf2ff" data-bar-color="#4b83fb" data-size="80">
+                                <div class="counter transform-center text-center">
+                                    <b data-from="0" data-to="{{h2_06_block_circle_num_1}}">0</b>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <h5 class="mb-0">{{h2_06_block_circle_txt1_1}}<br> {{h2_06_block_circle_txt2_1}}</h5>
+                            </div>
+                        </div>
+                        <div class="progress_box">
+                            <div class="circle_bar" data-percent="{{h2_06_block_circle_num_2}}" data-track-color="#ecf2ff" data-bar-color="#65cfa9" data-size="80">
+                                <div class="counter transform-center text-center">
+                                    <b data-from="0" data-to="{{h2_06_block_circle_num_2}}">0</b>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <h5 class="mb-0">{{h2_06_block_circle_txt1_2}}<br> {{h2_06_block_circle_txt2_2}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="accordion accordion-style mb-xl-30 wow fadeInDown" id="accordion">
+                        {{#h2_06_block}}
+                        <div class="card">
+                            <div class="card-header">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#{{counter}}" aria-expanded="true" aria-controls="{{counter}}">
+                                    {{title}}
+                                </button>
+                            </div>
+                            <div id="{{counter}}" class="collapse" aria-labelledby="{{counter}}" data-parent="#accordion">
+                                <div class="card-body">
+                                    {{caption}}
+                                </div>
+                            </div>
+                        </div>
+                        {{/h2_06_block}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

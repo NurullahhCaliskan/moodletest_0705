@@ -1,0 +1,286 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    Page Team Details.
+}}
+{{> theme_wellko/frontpage/navbar/header3 }}
+<!-- Subheader Start -->
+{{< theme_wellko/frontpage/page/page_subhdr }}
+    
+    {{$page_subhdimg_0}}
+        {{#page_16_page_subhdimg}}style="background-image: url({{frontpageimglink}}{{page_16_page_subhdimg}});"{{/page_16_page_subhdimg}}
+        {{^page_16_page_subhdimg}}style="padding: 70px 0 28px;"{{/page_16_page_subhdimg}}
+    {{/page_subhdimg_0}}    
+
+    {{$page_subhdimg_1}}
+        {{^page_16_page_subhdimg}}style="font-size: 45px;"{{/page_16_page_subhdimg}}
+    {{/page_subhdimg_1}}
+
+    {{$page_subhdimg_2}}
+        {{page_16_page_title}}
+    {{/page_subhdimg_2}}
+
+    {{$page_subhdimg_3}}
+        {{#page_16_page_subhdimg}}
+            {{> theme_wellko/frontpage/page/page_subhdr_elm }}
+        {{/page_16_page_subhdimg}}
+    {{/page_subhdimg_3}}
+
+{{/ theme_wellko/frontpage/page/page_subhdr }}
+<!-- Subheader End -->
+<!-- Team details Start -->
+{{#page_16_s1_enabled}}
+<section class="section-padding team_details">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="team_img mb-md-80">
+                    <img src="{{page_16_s1_userimg}}" alt="img" class="image-fit wow fadeInLeft rounded-1">
+                    <div class="video_warp">
+                        <img src="{{frontpageimglink}}team/video_img.jpg" alt="img" class="image-fit wow fadeInDown">
+                        <a href="{{page_16_s1_video_link}}" class="video_btn popup-youtube transform-center">
+                            <i class="fas fa-play video_icon bg-thm-color-three mx-auto"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="team_text pl-0 pl-xl-5 pl-lg-3">
+                    <h3 class="name wow fadeInDown">{{page_16_s1_username}}</h3>
+                    <p class="desi thm-color-two wow fadeInUp">{{page_16_s1_user_job}}</p>
+                    <ul class="social mb-xl-30 wow fadeInDown">
+
+                        {{#page_16_s1_usersocial1}}
+                        <li>
+                            <a href="{{page_16_s1_usersocial1link}}" target="_blank"><i class="{{page_16_s1_usersocial1}}"></i></a>
+                        </li>
+                        {{/page_16_s1_usersocial1}}
+                        {{#page_16_s1_usersocial2}}
+                        <li>
+                            <a href="{{page_16_s1_usersocial2link}}" target="_blank"><i class="{{page_16_s1_usersocial2}}"></i></a>
+                        </li>
+                        {{/page_16_s1_usersocial2}}
+                        {{#page_16_s1_usersocial3}}
+                        <li>
+                            <a href="{{page_16_s1_usersocial3link}}" target="_blank"><i class="{{page_16_s1_usersocial3}}"></i></a>
+                        </li>
+                        {{/page_16_s1_usersocial3}}
+                        {{#page_16_s1_usersocial4}}
+                        <li>
+                            <a href="{{page_16_s1_usersocial4link}}" target="_blank"><i class="{{page_16_s1_usersocial4}}"></i></a>
+                        </li>
+                        {{/page_16_s1_usersocial4}}
+                        {{#page_16_s1_usersocial5}}
+                        <li>
+                            <a href="{{page_16_s1_usersocial5link}}" target="_blank"><i class="{{page_16_s1_usersocial5}}"></i></a>
+                        </li>
+                        {{/page_16_s1_usersocial5}}
+                        {{#page_16_s1_usersocial6}}
+                        <li>
+                            <a href="{{page_16_s1_usersocial6link}}" target="_blank"><i class="{{page_16_s1_usersocial6}}"></i></a>
+                        </li>    
+                        {{/page_16_s1_usersocial6}}
+                    </ul>
+                    <p class="text wow fadeInUp">{{#shortentext}} 150,{{{page_16_s1_description}}} {{/shortentext}}</p>
+                    <ul class="info wow fadeInDown">
+                        <li>
+                            <i class="icon far fa-map-marker-alt"></i>
+                            <div class="text">
+                                <h6 class="mb-0">{{page_16_s1_header_text_1}}</h6>
+                                <p class="mb-0">{{page_16_s1_address}}, {{page_16_s1_city}}-{{page_16_s1_country}}</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="icon fal fa-envelope"></i>
+                            <div class="text">
+                                <h6 class="mb-0">{{page_16_s1_header_text_2}}</h6>
+                                <p class="mb-0">{{page_16_s1_email}}</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="icon fal fa-phone"></i>
+                            <div class="text">
+                                <h6 class="mb-0">{{page_16_s1_header_text_3}}</h6>
+                                <p class="mb-0">{{page_16_s1_phone1}}</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-padding pt-0 team_details">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav nav-tabs style_2">
+                    <li class="nav-item">
+                        <a href="#description" class="nav-link active" data-toggle="tab">{{page_16_s1_tab_1}}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#coach" class="nav-link" data-toggle="tab">{{page_16_s1_tab_2}}</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade active show" id="description">
+                        <p>{{{page_16_s1_description}}}</p>
+                    </div>
+                    <div class="tab-pane fade" id="coach">
+                        <!-- Counter Box Start -->
+                        <div class="section-padding pt-0">
+                            <div class="row">
+                                <!-- Box -->
+                                {{#h2_02_block}}
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="counter_box">
+                                        <div class="mr-5">
+                                            <img src="{{frontpageimglink}}icons/icon_{{counter4}}.png" alt="icon" class="image-fit">
+                                        </div>
+                                        <div class="text">
+                                            <div class="counter">
+                                                <b data-from="0" data-to="{{counting}}">{{counting}}</b>
+                                            </div>
+                                            <p class="mb-0">{{{title}}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{/h2_02_block}}
+                            </div>
+                        </div>
+                        <!-- Counter Box End -->
+                        <!-- Skills Start -->
+                        <!-- Skills End -->
+                        <div class="skills_sec">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-lg-6">
+                                    <div class="skill_box mb-xl-30 mb-md-80">
+                                        <h5 class="title">{{page_16_s1_headline}}</h5>
+                                        <div class="progress_bar_block">
+                                            <div class="progress_block">
+                                                <div class="text">
+                                                    <h6 class="title counter">{{page_16_s1_skill_txt_1}} 
+                                                        <b data-from="0" data-to="{{page_16_s1_skill_num_1}}">{{page_16_s1_skill_num_1}}</b>
+                                                    </h6>
+                                                    <div class="progress bg-thm-color-two">
+                                                        <div class="progress-bar bg-thm-color-two" role="progressbar" aria-valuenow="{{page_16_s1_skill_num_1}}" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="progress_block">
+                                                <div class="text">
+                                                    <h6 class="title counter">{{page_16_s1_skill_txt_2}} 
+                                                        <b data-from="0" data-to="{{page_16_s1_skill_num_2}}">{{page_16_s1_skill_num_2}}</b>
+                                                    </h6>
+                                                    <div class="progress bg-thm-color-three">
+                                                        <div class="progress-bar bg-thm-color-three" role="progressbar" aria-valuenow="{{page_16_s1_skill_num_2}}" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="progress_block">
+                                                <div class="text">
+                                                    <h6 class="title counter">{{page_16_s1_skill_txt_3}} 
+                                                        <b data-from="0" data-to="{{page_16_s1_skill_num_3}}">{{page_16_s1_skill_num_3}}</b>
+                                                    </h6>
+                                                    <div class="progress bg-thm-color-four">
+                                                        <div class="progress-bar bg-thm-color-four" role="progressbar" aria-valuenow="{{page_16_s1_skill_num_3}}" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="progress_block">
+                                                <div class="text">
+                                                    <h6 class="title counter">{{page_16_s1_skill_txt_4}} 
+                                                        <b data-from="0" data-to="{{page_16_s1_skill_num_4}}">{{page_16_s1_skill_num_4}}</b>
+                                                    </h6>
+                                                    <div class="progress bg-thm-color-six">
+                                                        <div class="progress-bar bg-thm-color-six" role="progressbar" aria-valuenow="{{page_16_s1_skill_num_4}}" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="image_box relative z-1 mb-xl-30 shadow_1">
+                                        <img src="{{frontpageimglink}}skills_2.jpg" alt="img" class="image-fit">
+                                        <img src="{{frontpageimglink}}elements/element_34.png" alt="img" class="element_1 rotate_elem">
+                                        <img src="{{frontpageimglink}}elements/element_25.png" alt="img" class="element_2 rotate_elem">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{/page_16_s1_enabled}}
+<!-- Team details End -->
+<!-- Cta Start -->
+{{#page_16_s2_enabled}}
+<section class="cta_box style_2">
+    <div class="container relative z-2">
+        <div class="bg-thm-color-two cta_box_inner z-2 mb-negative">
+            <img src="{{frontpageimglink}}elements/shape.png" alt="shape" class="shape_1 zoom-fade">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6">
+                    <div class="text_block wow fadeInLeft">
+                        <div class="section-title left-align white">
+                            <p class="subtitle">
+                            <i class="fal fa-book"></i>
+                                {{page_16_s2_headline}}
+                            </p>
+                            <h3 class="title">{{page_16_s2_header}}</h3>
+                            <a href="{{page_16_s2_button_lnk}}" class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle">
+                                {{page_16_s2_button}} 
+                                <i class="fal fa-chevron-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="image_box relative z-1 wow fadeInRight">
+                        <img src="{{frontpageimglink}}elements/square_shape.png" alt="shape" class="shape_2 rotate_elem">
+                        <img src="{{frontpageimglink}}cta_image.png" alt="img" class="image-fit">
+                        <div class="arrows slideRight">
+                            <div class="arrow"></div>
+                            <div class="arrow"></div>
+                            <div class="arrow"></div>
+                            <div class="arrow"></div>
+                            <div class="arrow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrows to_up slideTop">
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+        </div>
+    </div>
+</section>
+{{/page_16_s2_enabled}}
+<!-- Cta End -->
+{{#footer_enabled}}
+    {{> theme_wellko/frontpage/other/footer03 }}
+{{/footer_enabled}}

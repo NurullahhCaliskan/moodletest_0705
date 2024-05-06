@@ -1,0 +1,31 @@
+<section  id="h3_block04" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title wow fadeInUp">
+                    <p class="subtitle">
+                        <i class="fal fa-book"></i>
+                        {{h3_04_block_headline}}
+                    </p>
+                    <h3 class="title">{{h3_04_block_header}}</h3>
+                </div>
+            </div>
+            <!-- Box -->
+            {{#h3_04_block}}
+            <div class="{{col}}">
+                <div class="features_box style_2 wow fadeInDown" data-wow-delay=".{{counter4}}ms">
+                    <div class="mb-30">
+                        <img src="{{frontpageimglink}}icons/icon_{{counter8}}.png" alt="icon">
+                    </div>
+                    <h5>{{{title}}}</h5>
+                    <p>{{#shortentext}} 150, {{{caption}}} {{/shortentext}}</p>
+                    <a href="{{buttonurl}}" class="thm-btn bg-thm-color-two-light thm-color-two btn-rectangle btn-small mt-2">
+                        <i class="fal fa-chevron-right font-weight-bold"></i>
+                    </a>
+                </div>
+            </div>
+            {{/h3_04_block}}
+            <!-- Box -->
+        </div>
+    </div>
+</section>

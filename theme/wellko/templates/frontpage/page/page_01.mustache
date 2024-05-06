@@ -1,0 +1,232 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    Page testimonial.
+}}
+{{> theme_wellko/frontpage/navbar/header3 }}
+<!-- Subheader Start -->
+{{< theme_wellko/frontpage/page/page_subhdr }}
+    
+    {{$page_subhdimg_0}}
+        {{#page_01_page_subhdimg}}style="background-image: url({{frontpageimglink}}{{page_01_page_subhdimg}});"{{/page_01_page_subhdimg}}
+        {{^page_01_page_subhdimg}}style="padding: 70px 0 28px;"{{/page_01_page_subhdimg}}
+    {{/page_subhdimg_0}}    
+
+    {{$page_subhdimg_1}}
+        {{^page_01_page_subhdimg}}style="font-size: 45px;"{{/page_01_page_subhdimg}}
+    {{/page_subhdimg_1}}
+
+    {{$page_subhdimg_2}}
+        {{page_01_page_title}}
+    {{/page_subhdimg_2}}
+
+    {{$page_subhdimg_3}}
+        {{#page_01_page_subhdimg}}
+            {{> theme_wellko/frontpage/page/page_subhdr_elm }}
+        {{/page_01_page_subhdimg}}
+    {{/page_subhdimg_3}}
+
+{{/ theme_wellko/frontpage/page/page_subhdr }}
+<!-- Subheader End -->
+<!-- Testimonials Start -->
+{{#page_01_s1_enabled}}
+<section id="page_01_s1" class="section-padding relative z-1">
+    <div class="container">
+        <div class="row">
+            <!-- Testimonial Item -->
+            {{#page_01_s1}}
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial_item normal wow fadeInUp" data-wow-delay=".{{counter}}ms">
+                    <div class="author">
+                        <div class="image bg-thm-color-two">
+                            <img src="{{frontpageimglink}}author/{{counter}}.jpg" alt="img" class="image-fit">
+                        </div>
+                        <div class="text">
+                            <h6 class="mb-0">{{name}}</h6>
+                            <p class="mb-0 font-weight-bold thm-color-two">{{job}}</p>
+                        </div>
+                    </div>
+                    <p class="comment">
+                        {{comment}}
+                    </p>
+                    <div class="ratings">
+                        <i class="fal fa-star {{rating1}}"></i>
+                        <i class="fal fa-star {{rating2}}"></i>
+                        <i class="fal fa-star {{rating3}}"></i>
+                        <i class="fal fa-star {{rating4}}"></i>
+                        <i class="fal fa-star {{rating5}}"></i>
+                    </div>
+                </div>
+            </div>
+            {{/page_01_s1}}
+        </div>
+    </div>
+    <div class="circle_wave"></div>
+</section>
+{{/page_01_s1_enabled}}
+<!-- Testimonials End -->
+<!-- Plane Start -->
+{{#page_01_s2_enabled}}
+<div class="bg-thm-color-two plane_box relative z-1">
+    <div class="container relative z-1">
+        <div class="row justify-content-center">
+            <div class="col-xl-9 col-lg-11 relative z-1">
+                <img src="{{frontpageimglink}}elements/element_6.png" class="element_1 rotate_elem" alt="Element">
+                <h2 class="thm-color-white">{{page_01_s2_caption}}</h2>
+            </div>
+        </div>
+        <img src="{{frontpageimglink}}elements/element_7.png" class="element_2 zoom-fade" alt="Element">
+    </div>
+</div>
+{{/page_01_s2_enabled}}
+<!-- Plane End -->
+<!-- Testimonials Start -->
+{{#page_01_s3_enabled}}
+<section id="page_01_s3" class="section section-bg" style="background-image: url({{frontpageimglink}}bg/bg_3.png);">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title wow fadeInDown">
+                    <p class="subtitle">
+                        <i class="fal fa-book"></i>
+                        {{page_01_s3_headline}}
+                    </p>
+                    <h3 class="title">{{page_01_s3_header}}</h3>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial_slider_main mb-xl-30 justify-content-center wow fadeInUp">
+            {{#page_01_s3}}
+            <div class="slide-item row">
+                <div class="testimonial_item style_3 col-lg-7">
+                    <p class="comment">
+                        {{comment}}
+                    </p>
+                </div>
+            </div>
+            {{/page_01_s3}}
+        </div>
+        <div class="row justify-content-center">
+            <div class="testimonial_slider_nav col-lg-7">
+                {{#page_01_s3}}
+                <div class="slide-item">
+                    <div class="testimonial_item_img">
+                        <img src="{{frontpageimglink}}author/{{counter}}.jpg" class="image-fit" alt="img">
+                    </div>
+                </div>
+                {{/page_01_s3}}
+            </div>
+        </div>
+    </div>
+</section>
+{{/page_01_s3_enabled}}
+<!-- Testimonials End -->
+<!-- Testimonials Start -->
+{{#page_01_s4_enabled}}
+<section class="section pt-0">
+    <div class="container">
+        <div class="testi_bg wow fadeInRight" data-wow-delay=".40ms" style="background-image: url({{frontpageimglink}}shape_img_2.png);">
+            <div class="row">
+                <div class="col-xl-5 col-lg-6">
+                    <div class="section">
+                        <div class="section-title left-align wow fadeInDown">
+                            <p class="subtitle">
+                                <i class="fal fa-book"></i>
+                                {{page_01_s4_headline}}
+                            </p>
+                            <h3 class="title">{{page_01_s4_header}}</h3>
+                        </div>
+                        <div class="testimonial_slider_single">
+                            <!-- item -->
+                            {{#page_01_s4}}
+                            <div class="slide-item">
+                                <div class="testimonial_item style_2">
+                                    <p class="comment">{{comment}}</p>
+                                    <div class="author">
+                                        <div class="image">
+                                            <img src="{{frontpageimglink}}author/{{counter}}.jpg" alt="img" class="image-fit">
+                                        </div>
+                                        <div class="text">
+                                            <h6 class="mb-0">{{name}}</h6>
+                                            <p class="mb-0 font-weight-bold thm-color-two">{{job}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{/page_01_s4}}
+                            <!-- item -->
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{/page_01_s4_enabled}}
+<!-- Testimonials End -->
+<!-- Cta Start -->
+{{#page_01_s5_enabled}}
+<div class="cta_box style_2">
+    <div class="container relative z-2">
+        <div class="bg-thm-color-two cta_box_inner z-2 mb-negative">
+            <img src="{{frontpageimglink}}elements/shape.png" alt="shape" class="shape_1 zoom-fade">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6">
+                    <div class="text_block wow fadeInLeft">
+                        <div class="section-title left-align white">
+                            <p class="subtitle">
+                                <i class="fal fa-book"></i>
+                                {{page_01_s5_headline}}
+                            </p>
+                            <h3 class="title">{{page_01_s5_header}}</h3>
+                            <a href="{{page_01_s5_button_link}}" class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle">
+                                {{page_01_s5_button}}
+                                <i class="fal fa-chevron-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="image_box relative z-1 wow fadeInRight">
+                        <img src="{{frontpageimglink}}elements/square_shape.png" alt="shape" class="shape_2 rotate_elem">
+                        <img src="{{frontpageimglink}}cta_image.png" alt="img" class="image-fit">
+                        <div class="arrows slideRight">
+                            <div class="arrow"></div>
+                            <div class="arrow"></div>
+                            <div class="arrow"></div>
+                            <div class="arrow"></div>
+                            <div class="arrow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrows to_up slideTop">
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+        </div>
+    </div>
+</div>
+{{/page_01_s5_enabled}}
+<!-- Cta End -->
+{{#footer_enabled}}
+    {{> theme_wellko/frontpage/other/footer03 }}
+{{/footer_enabled}}

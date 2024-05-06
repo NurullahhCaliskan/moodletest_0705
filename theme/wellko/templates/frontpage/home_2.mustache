@@ -1,0 +1,97 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template theme_wellko/frontpage/home2
+
+    Theme front page builder.
+}}
+
+{{> theme_wellko/frontpage/head }}
+
+<body {{{ bodyattributes }}}>
+    <!-- Start preloader -->
+    {{> theme_wellko/frontpage/preloader }}
+    <!-- End preloader -->
+    
+    {{> core/local/toast/wrapper}}
+
+    <div class="frontpage_overflow">
+        <!-- Start Header Area -->
+        {{> theme_wellko/frontpage/navbar/header2}}
+        <!-- End Header Area -->
+        <!-- HOME ONE BLOCKS -->
+        {{#h2_01_block_enabled}}
+            {{> theme_wellko/frontpage/home_2/block_01 }}
+        {{/h2_01_block_enabled}}
+        {{#h2_02_block_enabled}}
+            {{> theme_wellko/frontpage/home_2/block_02 }}
+        {{/h2_02_block_enabled}}
+        {{#h2_03_block_enabled}}
+            {{> theme_wellko/frontpage/home_2/block_03 }}
+        {{/h2_03_block_enabled}}
+        {{#h2_04_block_enabled}}
+            {{> theme_wellko/frontpage/home_2/block_04 }}
+        {{/h2_04_block_enabled}}
+        {{#h2_05_block_enabled}}
+            {{> theme_wellko/frontpage/home_2/block_05 }}
+        {{/h2_05_block_enabled}}
+        {{#h2_06_block_enabled}}
+            {{> theme_wellko/frontpage/home_2/block_06 }}
+        {{/h2_06_block_enabled}}
+        {{#h2_07_block_enabled}}
+            {{> theme_wellko/frontpage/home_2/block_07 }}
+        {{/h2_07_block_enabled}}
+        {{#h2_08_block_enabled}}
+            {{> theme_wellko/frontpage/home_2/block_08 }}
+        {{/h2_08_block_enabled}}
+        {{#h2_09_block_enabled}}
+            {{> theme_wellko/frontpage/home_2/block_09 }}
+        {{/h2_09_block_enabled}}
+        {{#h1_11_block_enabled}}
+            {{> theme_wellko/frontpage/home_1/block_10 }}
+        {{/h1_11_block_enabled}}
+        {{#h1_11_block_enabled}}
+            {{> theme_wellko/frontpage/home_1/block_11 }}
+        {{/h1_11_block_enabled}}
+        {{#h1_12_block_enabled}}
+            {{> theme_wellko/frontpage/home_1/block_12 }}
+        {{/h1_12_block_enabled}}
+        {{#footer_enabled}}
+            {{> theme_wellko/frontpage/other/footer02 }}
+        {{/footer_enabled}}   
+        {{#aside_enabled}}
+            {{> theme_wellko/frontpage/other/aside }}
+        {{/aside_enabled}}
+
+        {{> theme_wellko/frontpage/other/aside_m }}
+
+        <!-- Start dark-light -->
+        {{> theme_wellko/frontpage/darklight }}
+        <!-- End dark-light -->
+        <!-- Start go to top -->
+        {{> theme_wellko/frontpage/gototop }}
+        <!-- End go to top -->
+        {{> theme_wellko/frontpage/setup}}
+    </div>
+</body>
+</html>
+{{#js}}
+    M.util.js_pending('theme_boost/loader');
+    require(['theme_boost/loader'], function() {
+        M.util.js_complete('theme_boost/loader');
+    });
+{{/js}}

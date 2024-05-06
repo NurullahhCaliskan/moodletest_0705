@@ -1,0 +1,160 @@
+// General scss.
+body {
+    max-width: 1920px;
+    margin: auto;
+}
+.secondary-navigation .navigation {
+    border-top: none;
+    border-bottom: none;
+    font-weight: 700;
+}
+#page.drawers .main-inner {
+    background-color: transparent;
+}
+#page-my-index .block_myoverview.block {
+    padding: 15px;
+}
+/* Alert message */
+.alert {
+    margin: 15px;
+}
+/** Class hide/visible */
+.classhide {
+    display: none;
+}
+.classvisible {
+    display: block;
+}
+// Dashboard blocks.
+#block-region-content {
+    h5 {
+        font-weight: 500;
+    }
+}
+// Link focus.
+.aalink.focus,
+.aalink:focus,
+#page-footer a:not([class]).focus,
+#page-footer a:not([class]):focus,
+.arrow_link.focus,
+.arrow_link:focus,
+a:not([class]).focus,
+a:not([class]):focus,
+.activityinstance > a.focus,
+.activityinstance > a:focus {
+    outline: 0.2rem solid transparent;
+    color: #212529;
+    background-color: transparent;
+    box-shadow: none;
+    text-decoration: underline;
+}
+// Dashboard my courses.
+.dashboard-card a.coursename {
+    text-decoration: none;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #1e1f21;
+}
+.card.dashboard-card {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+    transition: all .4s ease-in-out;
+}
+
+#instance-196-header,
+#instance-201-header,
+#instance-209-header,
+#instance-205-header,
+#instance-208-header,
+.modal-title {
+    font-weight: 700;
+}
+.calendar-controls .previous,
+.calendar-controls .next,
+.calendar-controls .current {
+    font-weight: 700;
+}
+// Dashboard button.
+.btn {
+    font-weight: 700;
+}
+/* Dashboard course card img size.*/
+.dashboard-card-deck {
+    .dashboard-card {
+        .dashboard-card-img {
+            height: $dashboard-card-img-height;
+        }
+    }
+}
+
+/* Wellko settings accordion */
+.wellko-acc {
+    .wellko-i-up {
+        display: block;
+    }
+    .wellko-i-down {
+        display: none;
+    }
+    &.collapsed {
+        .wellko-i-down {
+            display: block;
+        }
+        .wellko-i-up {
+            display: none;
+        }
+    }
+}
+
+.page-context-header {
+    align-items: center;
+}
+#page-header-headings {
+    padding: 0 15px;
+}
+.moodle-dialogue-bd {
+    height: auto !important;
+}
+// Layout scss owerride.
+@media (min-width: 768px) {
+    .pagelayout-standard #page.drawers .main-inner,
+    body.limitedwidth #page.drawers .main-inner {
+        max-width: 1400px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .container {
+        max-width: 1299px;
+    }
+}
+
+@media (min-width: 1410px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
+@media (min-width: 768px) {
+    #page.drawers {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+/* Frontpage Orj moodle page button */
+.setupbutton {
+    position: relative;
+    bottom: 32px;
+    margin-left: 20px;
+    i {
+        font-size: 24px;
+        color: white;
+    }
+}

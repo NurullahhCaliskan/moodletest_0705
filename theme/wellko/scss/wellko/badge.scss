@@ -1,0 +1,20 @@
+
+/* wellko theme bagde settings */
+.badge {
+    font-weight: 600;
+    font-size: 11px;
+    padding: 4px 4px;
+}
+.badge-info {
+    color: rgb(240, 241, 237);
+    background-color: rgb(184, 79, 79, 0.6);
+}
+a.badge-info:hover,
+a.badge-info:focus {
+    color: #fff;
+    background-color: rgba(80, 77, 92);
+}
+.badge-secondary {
+    background-color: rgb(184, 79, 79, 0.3);
+    padding: 0.4em;
+}

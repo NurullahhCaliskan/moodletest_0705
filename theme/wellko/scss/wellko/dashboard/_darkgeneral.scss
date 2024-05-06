@@ -1,0 +1,163 @@
+// Dashboard my courses.
+.dark-dashboard {
+    .dashboard-card a.coursename {
+        text-decoration: none;
+        font-weight: 700;
+        margin-bottom: 5px;
+        font-size: 16px;
+        color: var(--color-dl-yellow-b);
+    }
+    .card.dashboard-card {
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        border-radius: 6px;
+        border: none;
+        background-color: var(--color-dl-bg-black-dark);
+        -webkit-box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+        -moz-box-shadow: 0 1px 2px rgba(0,0,0,.1);
+        box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+        transition: all .4s ease-in-out;
+    }
+    .secondary-navigation .navigation .nav-tabs {
+        max-width: 100%;
+    }
+    .singlebutton {
+        padding-bottom: 0.25rem;
+    }
+    /* Frontpage Orj moodle page button */
+    .setupbutton{
+        position: relative; 
+        bottom: 32px;
+        margin-left: 20px;
+        i {
+            font-size: 24px;
+            color: white;
+        }
+    }
+    /* Dashboard block seting button */
+    .block .block-controls .dropdown-toggle {
+        color: var(--color-dl-yellow-a);
+    }
+    /* Form select */
+    .form-autocomplete-suggestions {
+        background-color: var(--color-dl-grey-a);
+        border-radius: 0.5rem;
+    }
+    .statusbox.inactive {
+        background-color: var(--color-dl-grey-b);
+        border-radius: 0.5rem;
+    }
+    .activatebadge {
+        margin: 0 15px;
+    }
+    div.criteria-description,
+    .statusbox.active {
+        background-color: var(--color-dl-grey-b);
+    }
+    /* Content bank */
+    .content-bank-container {
+        &.view-list {
+            .cb-heading {
+                &.bg-white {
+                    background-color: var(--color-dl-grey-a) !important;
+                }
+            }
+        }
+        .content-bank {
+            .cb-navbar {
+                &.bg-light {
+                    background-color: var(--color-dl-grey-b) !important;
+                }
+            }
+        }
+        .cb-content-wrapper {
+            padding: 0 !important;
+        }
+    }
+    /* Search */
+    .simplesearchform .collapse.show, .simplesearchform .collapsing {
+        background-color: var(--color-dl-grey-a);
+    }
+    /* Add block button */
+    .activity-add,
+    .block-add {
+        background-color: var(--color-dl-grey-b);
+        border-color: var(--color-dl-yellow-b);
+        .pluscontainer {
+            border: none;
+        }
+    }
+    /* pagination link */
+    .page-link {
+        background-color: var(--color-dl-grey-b);
+    }
+    /* Model activite background*/
+    .tab-content.flex-fill.bg-light {
+        background-color: var(--color-dl-grey-b) !important;
+        border: none !important;
+    }
+    /* Settings accordion text. */
+    .btn-link {
+        color: var(--warning);
+        &:hover {
+            color: var(--color-dl-grey-a);
+        }
+    }
+    /* file picker */
+    .yui3-datatable-header {
+        text-shadow: none; 
+    }
+    .yui3-datatable-table {
+        background-color: var(--color-dl-grey-a);
+    }
+    .yui3-datatable-even .yui3-datatable-cell {
+        background-color: var(--color-dl-bg-black-dark);
+    }
+    .yui3-datatable-odd .yui3-datatable-cell {
+        background-color: var(--color-dl-grey-b);
+    }
+    .fp-iconview .fp-thumbnail img {
+        border: 0 solid #ddd;
+    }
+    .file-picker.fp-generallayout {
+        .fp-repo-items {
+            border: 1px solid var(--color-dl-white-bsc);
+            border-radius: 0.25rem;
+        }
+    }
+    .yui3-datatable-cell, 
+    .yui3-datatable-header {
+        border-left: 1px solid var(--color-dl-white-bsc);
+        border-bottom: 1px solid var(--color-dl-white-bsc);
+    }
+    .fp-iconview .fp-thumbnail {
+        border: 1px solid transparent;
+    }
+    .fp-iconview .fp-filename-field .fp-filename {
+        background: none;
+    }
+    .moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd.yui3-widget-hd {
+        color: var(--color-dl-white-bsc);
+        background: var(--color-dl-grey-b);
+    }
+    .moodle-dialogue-base .moodle-dialogue .moodle-dialogue-bd {
+        background-color: var(--color-dl-bg-black);
+    }
+    .file-picker .fp-content {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        background-color: var(--color-dl-grey-b);
+        border: none;
+    }
+    .file-picker .fp-navbar {
+        border: none;
+    }
+    /* Layout scss owerride. */
+    @media (min-width: 768px) {
+        .header-maxwidth {
+            max-width: 100% !important;
+        }
+    }
+}

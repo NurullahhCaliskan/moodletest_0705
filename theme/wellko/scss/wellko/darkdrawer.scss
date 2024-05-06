@@ -1,0 +1,119 @@
+/* Theme wellko side bar group item customize*/
+// List grup padding.
+.dark-dashboard {
+    .message-app {
+        background-color: var(--color-dl-card-black) !important;
+        .bg-white {
+            background-color: var(--color-dl-bg-black-dark) !important;  
+        }
+        .list-group-item, .card {
+            background-color: var(--color-dl-bg-black);
+        }
+        .list-group .list-group-item {
+            &:hover {
+                color: var(--color-dl-grey-a);
+                background-color: var(--color-dl-yellow-a);
+            }
+        }
+        .btn.btn-link.btn-icon {
+            &:hover, &:focus {
+                background-color: var(--color-dl-grey-b);
+            }
+        }
+        .closewidget {
+            .text-dark {
+                color: var(--color-dl-grey-a) !important;
+            }
+
+        }
+    }
+    .drawerheader {
+        .btn {
+            color: var(--color-dl-grey-a);
+        }
+    }
+    .drawer.drawer-left {
+        background-color: var(--color-dl-bg-black-dark);
+        .courseindex-link {
+            color: var(--color-dl-grey-a);
+            &:hover {
+                color: var(--color-dl-yellow-b);
+            }
+        }
+        .courseindex {
+            .courseindex-item {
+                &:hover, &:focus {
+                    .courseindex-link,
+                    .courseindex-chevron {
+                        color: var(--color-dl-yellow-b);
+                    }
+                }
+                .completioninfo {
+                    min-width: 40px;
+                }
+                .circle-step-num-activated {
+                    position: relative;
+                    box-sizing: border-box;
+                    width: 24px;
+                    height: 24px;
+                    float: left;
+                    border-radius: 16px;
+                    border: 1px solid var(--color-dl-yellow-b);
+                    background: var(--color-dl-bg-black-dark);
+                    overflow: hidden;
+                    margin-right: 8px;
+                    .inner {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background: transparent;
+                        width: 5px;
+                        height: 16px;
+                        border-radius: 50%;
+                        text-align: center;
+                        color: var(--color-dl-yellow-b);
+                    }
+                }
+
+            }
+        }
+    }
+
+    .drawer.drawer-right {
+        background-color: var(--color-dl-bg-black-dark);
+        .drawercontent {
+            .block-region {
+                .card {
+                    background-color: var(--color-dl-grey-b);
+                    color: var(--color-dl-white-bsc);
+                    border: 1px solid var(--color-dl-yellow-b);
+                }
+            }
+
+        }
+    }
+    .drawercontent .list-group a.list-group-item {
+        padding: 10px 15px;
+        font-weight: 800;
+        border-bottom: 2px solid var(--thm-border);
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    .list-group-item {
+        padding: 0.77rem 1.25rem;
+        &.active {
+            color: $list-group-active-color;
+            background-color: $list-group-active-bg;
+            border-color: $list-group-active-border-color;
+        }
+    }
+    .list-group-item-action {
+        font-weight: 500;
+        border: 0px solid rgba(0, 0, 0, 0.125);
+    }
+}

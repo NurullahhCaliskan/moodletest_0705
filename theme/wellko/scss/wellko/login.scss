@@ -1,0 +1,65 @@
+/* Login page */
+.login-container {
+    transition: 0.5s;
+    box-shadow: none;
+    .btn {
+        padding: 0.5rem 1rem;
+        width: 100%;
+    }
+}
+.login-left {
+    position: inherit;
+    left: 0;
+    transition: 0.5s;
+}
+.login-right {
+    position: inherit;
+    left: auto;
+    right: 0;
+    transition: 0.5s;
+}
+.login-form {
+    max-width:500px;
+    .login-form-username::before, .login-form-password::before {
+        width: 20px;
+        font-family: "FontAwesome";
+        font-size: 1rem;
+        line-height: 1;
+        position: absolute;
+        top: calc(50% - ( 1rem / 2));
+        left: 12.5px;
+        text-align: center;
+        color: inherit;
+        opacity: .5;
+        z-index: 2;
+    }
+    .login-form-username::before {
+        content: "\f007";
+    }
+    .login-form-password::before {
+        content: "\f023";
+    }
+    .login-form-username, .login-form-password {
+        position: relative;
+        .form-control {
+            padding-left: 40px;
+        }
+    }
+}
+/* Login page social login button */
+.btn-login {
+    color: var( --theme-color );
+    background-color: var( --theme-color-ops-1 );
+    border-color: var( --theme-color-ops-8 );
+}
+
+@include media-breakpoint-up(sm) {
+    .login-container {
+        max-width: 600px;
+    }
+}
+@include media-breakpoint-down(xs) {
+    .login-container {
+        width: 100%;
+    }
+}

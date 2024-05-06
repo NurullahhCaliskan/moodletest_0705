@@ -1,0 +1,291 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    Page Contact.
+}}
+{{> theme_wellko/frontpage/navbar/header3 }}
+<!-- Subheader Start -->
+{{< theme_wellko/frontpage/page/page_subhdr }}
+    
+    {{$page_subhdimg_0}}
+        {{#page_10_page_subhdimg}}style="background-image: url({{frontpageimglink}}{{page_10_page_subhdimg}});"{{/page_10_page_subhdimg}}
+        {{^page_10_page_subhdimg}}style="padding: 70px 0 28px;"{{/page_10_page_subhdimg}}
+    {{/page_subhdimg_0}}    
+
+    {{$page_subhdimg_1}}
+        {{^page_10_page_subhdimg}}style="font-size: 45px;"{{/page_10_page_subhdimg}}
+    {{/page_subhdimg_1}}
+
+    {{$page_subhdimg_2}}
+        <span lang="en" class="multilang" style="display:none;">{{page_10_page_title_1}}</span>
+        <span lang="tr" class="multilang" style="display:none;">{{page_10_page_title_2}}</span> 
+    {{/page_subhdimg_2}}
+
+    {{$page_subhdimg_3}}
+        {{#page_10_page_subhdimg}}
+            {{> theme_wellko/frontpage/page/page_subhdr_elm }}
+        {{/page_10_page_subhdimg}}
+    {{/page_subhdimg_3}}
+
+{{/ theme_wellko/frontpage/page/page_subhdr }}
+<!-- Subheader End -->
+ <!-- Contact Faq Box Start -->
+{{#page_10_s1_enabled}}
+<section id="page_10_s1" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title wow fadeInUp">
+                    <p class="subtitle">
+                            <i class="fal fa-book"></i>
+                            <span lang="en" class="multilang" style="display:none;font-size:56px;">{{page_10_s1_headline_1}}</span>
+                            <span lang="tr" class="multilang" style="display:none;font-size:56px;">{{page_10_s1_headline_2}}</span> 
+                            
+                    </p>
+                    <h3 class="title">{{page_10_s1_header}}</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="contact_faq_box shadow_1 wow fadeInDown" data-wow-delay=".30ms">
+                    <div class="icon_faq">
+                        <img src="{{frontpageimglink}}icons/icon_14.png" alt="icon" class="image-fit-contain">
+                    </div>
+                    <div class="text">
+                        <h4>{{page_10_s1_maintitle_1}}</h4>
+                        <p>{{page_10_s1_caption_1}}</p>
+                        <a href="{{page_10_s1_button_lnk_1}}" class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle">{{page_10_s1_button_1}} 
+                            <i class="fal fa-chevron-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="contact_faq_box shadow_1 wow fadeInUp" data-wow-delay=".40ms">
+                    <div class="icon_faq">
+                        <img src="{{frontpageimglink}}icons/icon_15.png" alt="icon" class="image-fit-contain">
+                    </div>
+                    <div class="text">
+                        <h4>{{page_10_s1_maintitle_2}}</h4>
+                        <p>{{page_10_s1_caption_2}}</p>
+                        <a href="{{page_10_s1_button_lnk_2}}" class="thm-btn bg-thm-color-two thm-color-two-shadow btn-rectangle">{{page_10_s1_button_2}}
+                            <i class="fal fa-chevron-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{/page_10_s1_enabled}}
+ <!-- Contact Faq Box End -->
+
+<!-- Contact Map & Info Start -->
+{{#page_10_s2_enabled}}
+<div id="page_10_s2" class="container">
+    <div class="row align-items-center">
+        <div class="col-xl-4 col-lg-5">
+            <div class="section-title left-align wow fadeInDown">
+                <p class="subtitle">
+                    <i class="fal fa-book"></i>
+                    <span lang="en" class="multilang" style="display:none;">{{page_10_s2_headline_1}}</span>
+                    <span lang="tr" class="multilang" style="display:none;">{{page_10_s2_headline_2}}</span> 
+                    
+                </p>
+                <h3 class="title">
+                <span lang="en" class="multilang" style="display:none;">{{page_10_s2_header_1}}</span>
+                <span lang="tr" class="multilang" style="display:none;">{{page_10_s2_header_2}}</span> 
+                </h3>
+            </div>
+            <div class="contact_info mb-md-80">
+                <ul>
+                    <li class="wow fadeInUp">
+                        <i class='icon bx bx-map'></i>
+                        <div class="text">
+                            <h6>
+                            <span lang="en" class="multilang" style="display:none;">{{page_10_s2_three_header_1}}</span>
+                            <span lang="tr" class="multilang" style="display:none;">{{page_10_s2_three_header_4}}</span> 
+                            </h6>
+                            <p id="map-address">{{page_10_s2_three_text_1}}</p>
+                            <p id="map-geolocation-1" class="d-none">{{page_10_s2_geolocation_1}}</p>
+                            <p id="map-geolocation-2" class="d-none">{{page_10_s2_geolocation_2}}</p>
+                        </div>
+                    </li>
+                    <li class="wow fadeInDown">
+                        <i class='icon bx bx-envelope'></i>
+                        <div class="text">
+                            <h6>
+                            <span lang="en" class="multilang" style="display:none;">{{page_10_s2_three_header_2}}</span>
+                            <span lang="tr" class="multilang" style="display:none;">{{page_10_s2_three_header_5}}</span> 
+                            </h6>
+                            <p>{{page_10_s2_three_text_2}}</p>
+                        </div>
+                    </li>
+                    <li class="wow fadeInUp">
+                        <i class='icon bx bx-phone bx-flip-horizontal'></i>
+                        <div class="text">
+                            <h6>
+                            <span lang="en" class="multilang" style="display:none;">{{page_10_s2_three_header_3}}</span>
+                            <span lang="tr" class="multilang" style="display:none;">{{page_10_s2_three_header_6}}</span> 
+                            </h6>
+                            <p>{{page_10_s2_three_text_3}}</p>
+                            
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xl-8 col-lg-7">
+            <div class="contact_map relative z-1 wow fadeInRight" id="map"></div>
+        </div>
+    </div>
+</div>
+{{/page_10_s2_enabled}}
+<!-- Contact Map & Info End -->
+<!-- Contact Form Start -->
+{{#page_10_s3_enabled}}
+<section id="page_10_s3" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title wow fadeInDown">
+                    <p class="subtitle">
+                        <i class="fal fa-book"></i>
+                        <span lang="en" class="multilang" style="display:none;">{{page_10_s3_headline_1}}</span>
+                        <span lang="tr" class="multilang" style="display:none;">{{page_10_s3_headline_2}}</span> 
+                        
+                    </p>
+                    <h3 class="title">
+                    <span lang="en" class="multilang" style="display:none;">{{page_10_s3_header_1}}</span>
+                    <span lang="tr" class="multilang" style="display:none;">{{page_10_s3_header_2}}</span> 
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <form class="wow fadeInUp" action="{{page_10_s3_button_lnk}}" method="post" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group form_style">
+                        <label>
+                        <span lang="en" class="multilang" style="display:none;">{{page_10_s3_five_text_1}}</span>
+                        <span lang="tr" class="multilang" style="display:none;">{{page_10_s3_five_text_6}}</span> 
+                        </label>
+                        <input type="text" name="name" required="" class="form-control" autocomplete="off" placeholder="{{page_10_s3_five_text_1}}">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-group form_style">
+                        <label>
+                        <span lang="en" class="multilang" style="display:none;">{{page_10_s3_five_text_2}}</span>
+                        <span lang="tr" class="multilang" style="display:none;">{{page_10_s3_five_text_7}}</span>
+                        </label>
+                        <input type="text" name="phone" class="form-control" autocomplete="off" placeholder="{{page_10_s3_five_text_2}}">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-group form_style">
+                        <label>
+                        <span lang="en" class="multilang" style="display:none;">{{page_10_s3_five_text_3}}</span>
+                        <span lang="tr" class="multilang" style="display:none;">{{page_10_s3_five_text_8}}</span>
+                        </label>
+                        <input type="email" name="email" required="" class="form-control" autocomplete="off" placeholder="{{page_10_s3_five_text_3}}">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-group form_style">
+                        <label>
+                        <span lang="en" class="multilang" style="display:none;">{{page_10_s3_five_text_4}}</span>
+                        <span lang="tr" class="multilang" style="display:none;">{{page_10_s3_five_text_9}}</span>
+                        </label>
+                        <input type="text" name="subject" class="form-control" autocomplete="off" placeholder="{{page_10_s3_five_text_4}}">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="form-group form_style">
+                        <label>
+                        <span lang="en" class="multilang" style="display:none;">{{page_10_s3_five_text_5}}</span>
+                        <span lang="tr" class="multilang" style="display:none;">{{page_10_s3_five_text_10}}</span>
+                        </label>
+                        <textarea rows="10" class="form-control" placeholder="Write Message" autocomplete="off" name="{{page_10_s3_five_text_5}}"></textarea>
+                    </div>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <button type="submit" name="submit" class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle">
+                    <span lang="en" class="multilang" style="display:none;">{{page_10_s3_button_1}}</span>
+                    <span lang="tr" class="multilang" style="display:none;">{{page_10_s3_button_2}}</span>
+                    
+                        <i class="fal fa-chevron-right ml-2">
+                    </i></button>
+                </div>
+            </div>
+            <input type="hidden" name="f-name" value="CONTACT FORM">
+            <input type="hidden" name="sesskey" value="{{sesskey}}">
+        </form>
+    </div>
+</section>
+{{/page_10_s3_enabled}}
+<!-- Contact Form End -->
+<!-- Cta Start -->
+{{#page_10_s4_enabled}}
+<section class="cta_box style_2">
+        <div class="container relative z-2">
+            <div class="bg-thm-color-two cta_box_inner z-2 mb-negative">
+                <img src="{{frontpageimglink}}elements/shape.png" alt="shape" class="shape_1 zoom-fade">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-6">
+                        <div class="text_block wow fadeInLeft">
+                            <div class="section-title left-align white">
+                                <p class="subtitle">
+                                <i class="fal fa-book"></i>
+                                    {{page_10_s4_headline}}
+                                </p>
+                                <h3 class="title">{{page_10_s4_header}}</h3>
+                                <a href="{{{page_10_s4_button_link}}}" class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle">{{page_10_s4_button}} 
+                                <i class="fal fa-chevron-right ml-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="image_box relative z-1 wow fadeInRight">
+                            <img src="{{frontpageimglink}}elements/square_shape.png" alt="shape" class="shape_2 rotate_elem">
+                            <img src="{{frontpageimglink}}cta_image.png" alt="img" class="image-fit">
+                            <div class="arrows slideRight">
+                                <div class="arrow"></div>
+                                <div class="arrow"></div>
+                                <div class="arrow"></div>
+                                <div class="arrow"></div>
+                                <div class="arrow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrows to_up slideTop">
+                <div class="arrow"></div>
+                <div class="arrow"></div>
+                <div class="arrow"></div>
+                <div class="arrow"></div>
+                <div class="arrow"></div>
+            </div>
+        </div>
+</section>
+{{/page_10_s4_enabled}}
+<!-- Cta End -->
+{{#footer_enabled}}
+    {{> theme_wellko/frontpage/other/footer03 }}
+{{/footer_enabled}}

@@ -1,0 +1,30 @@
+/* Theme wellko side bar group item customize*/
+// List grup padding.
+.drawercontent .list-group a.list-group-item {
+    padding: 10px 15px;
+    font-weight: 800;
+    border-bottom: 2px solid var(--thm-border);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+// .drawerheader button i {
+//     font-size: 26px;
+// }
+.list-group-item {
+    padding: 0.77rem 1.25rem;
+    &.active {
+        color: $list-group-active-color;
+        background-color: $list-group-active-bg;
+        border-color: $list-group-active-border-color;
+    }
+}
+.list-group-item-action {
+    font-weight: 500;
+    border: 0 solid rgba(0, 0, 0, 0.125);
+}
+.drawerheader {
+    height: 50px;
+}
+.drawercontent {
+    height: calc(100% - 50px);
+}

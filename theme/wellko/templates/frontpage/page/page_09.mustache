@@ -1,0 +1,392 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    Page About Me.
+}}
+{{> theme_wellko/frontpage/navbar/header3 }}
+<!-- Subheader Start -->
+{{< theme_wellko/frontpage/page/page_subhdr }}
+    
+    {{$page_subhdimg_0}}
+        {{#page_09_page_subhdimg}}style="background-image: url({{frontpageimglink}}{{page_09_page_subhdimg}});"{{/page_09_page_subhdimg}}
+        {{^page_09_page_subhdimg}}style="padding: 70px 0 28px;"{{/page_09_page_subhdimg}}
+    {{/page_subhdimg_0}}    
+
+    {{$page_subhdimg_1}}
+        {{^page_09_page_subhdimg}}style="font-size: 45px;"{{/page_09_page_subhdimg}}
+    {{/page_subhdimg_1}}
+
+    {{$page_subhdimg_2}}
+        {{page_09_page_title}}
+    {{/page_subhdimg_2}}
+
+    {{$page_subhdimg_3}}
+        {{#page_09_page_subhdimg}}
+            {{> theme_wellko/frontpage/page/page_subhdr_elm }}
+        {{/page_09_page_subhdimg}}
+    {{/page_subhdimg_3}}
+
+{{/ theme_wellko/frontpage/page/page_subhdr }}
+<!-- Subheader End -->
+<!-- About me Start -->
+{{#page_09_s1_enabled}}
+<section class="section">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-xl-5 col-lg-6">
+                <div class="section-title left-align wow fadeInDown">
+                    <p class="subtitle">
+                        <i class="fal fa-book"></i>
+                        {{page_09_s1_subtitle}}
+                    </p>
+                    <h3 class="title">{{page_09_s1_title}}</h3>
+                    <p class="mb-0">{{page_09_s1_caption}}</p>
+                </div>
+                <ul class="about_list style_2 mb-xl-30 wow fadeInUp">
+                    <li>
+                        {{page_09_s1_four_text_1}}
+                    </li>
+                    <li>
+                        {{page_09_s1_four_text_2}}
+                    </li>
+                    <li>
+                        {{page_09_s1_four_text_3}}
+                    </li>
+                    <li>
+                        {{page_09_s1_four_text_4}}
+                    </li>
+                </ul>
+                <a href="{{page_09_s1_button_link}}" class="thm-btn bg-thm-color-two thm-color-two-shadow btn-rectangle mt-3 wow fadeInDown">
+                    {{page_09_s1_button}}
+                    <i class="fal fa-chevron-right ml-2"></i>
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <div class="image_box relative z-1 text-center about_me">
+                    <img src="{{frontpageimglink}}about/about_me.png" alt="img" class="wow fadeInRight">
+                    <span class="bg-thm-color-three circle_element"></span>
+                    <div class="progress_box grid wow fadeInDown">
+                        <div class="circle_bar" data-percent="{{page_09_s1_circle_1}}" data-track-color="#ecf2ff" data-bar-color="#4b83fb" data-size="80">
+                            <div class="counter transform-center text-center">
+                                <b data-from="0" data-to="{{page_09_s1_circle_1}}">0</b>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h5 class="mb-0">{{page_09_s1_circle_2}}<br>
+                                {{page_09_s1_circle_3}}</h5>
+                        </div>
+                    </div>
+                    <img src="{{frontpageimglink}}elements/element_28.png" alt="element" class="element_1">
+                    <img src="{{frontpageimglink}}elements/element_29.png" alt="element" class="element_2 rotate_elem">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{/page_09_s1_enabled}}
+<!-- About me End -->
+
+<!-- Features Start -->
+{{#page_09_s2_enabled}}
+<section class="section-padding about_bg section-bg features_sec pb-extra" style="background-image: url({{frontpageimglink}}bg/bg_1.png);">
+    <div class="container">
+        <div class="row">
+            <!-- Feature Box Start -->
+             {{#h1_02_block}}
+            <div class="col-lg-3 col-md-6">
+                <div class="features_box style_3 wow fadeInDown">
+                    <div class="mb-5">
+                        <img src="{{frontpageimglink}}icons/icon_{{counter}}.png" alt="img">
+                    </div>
+                    <h5>{{title}}</h5>
+                    <p>{{#shortentext}} 150, {{{caption}}} {{/shortentext}}</p>
+                    <a href="{{buttonurl}}">
+                        <span>{{{button}}}</span>
+                        <i class="fal fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+             {{/h1_02_block}}
+            <!-- Feature Box End -->
+        </div>
+    </div>
+</section>
+{{/page_09_s2_enabled}}
+<!-- Features End -->
+
+<!-- Video Start -->
+{{#page_09_s3_enabled}}
+<div class="section pt-0 video_box_elements mt-negative">
+    <div class="container relative z-1">
+        <div class="row">
+            <div class="col-12">
+                <div class="video_warp style_2 relative z-1 wow fadeInDown">
+                    <img src="{{frontpageimglink}}video_img_2.jpg" alt="img" class="image-fit">
+                    <a href="{{page_09_s3_video_lnk}}" class="popup-youtube transform-center justify-content-center d-flex">
+                        <img src="{{frontpageimglink}}icons/youtube.png" alt="icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <img src="{{frontpageimglink}}elements/element_25.png" alt="element" class="element_1 rotate_elem">
+        <img src="{{frontpageimglink}}elements/element_30.png" alt="element" class="element_2 rotate_elem">
+        <img src="{{frontpageimglink}}elements/element_27.png" alt="element" class="element_3 rotate_elem">
+        <div class="arrows to_up one slideTop">
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+        </div>
+        <div class="arrows to_up two slideTop">
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+        </div>
+    </div>
+</div>
+{{/page_09_s3_enabled}}
+<!-- Video End -->
+
+<!-- What We Know Start -->
+{{#page_09_s4_enabled}}
+<section class="what_we_know section pt-0">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-lg-6">
+                <div class="image_box relative z-1 text-center about_me mb-md-80">
+                    <img src="{{frontpageimglink}}about/about_me_2.png" alt="img" class="wow fadeInLeft">
+                    <span class="bg-thm-color-three circle_element"></span>
+                    <div class="progress_box grid wow fadeInDown">
+                        <div class="circle_bar" data-percent="{{page_09_s4_circle_1}}" data-track-color="#ecf2ff" data-bar-color="#4b83fb" data-size="80">
+                            <div class="counter transform-center text-center">
+                                <b data-from="0" data-to="{{page_09_s4_circle_1}}">0</b>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h5 class="mb-0">{{page_09_s4_circle_2}}<br>
+                                {{page_09_s4_circle_3}}</h5>
+                        </div>
+                    </div>
+                    <img src="{{frontpageimglink}}elements/element_28.png" alt="element" class="element_1">
+                    <img src="{{frontpageimglink}}elements/element_29.png" alt="element" class="element_2 rotate_elem">
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-6">
+                <div class="section-title left-align wow fadeInDown">
+                    <p class="subtitle">
+                        <i class="fal fa-book"></i>
+                        {{page_09_s4_subtitle}}
+                    </p>
+                    <h3 class="title mb-0">{{page_09_s4_title}}</h3>
+                </div>
+                <ul class="why-us-list style_2 style_3">
+                    <li class="wow fadeInUp">
+                        <i class="icon fal fa-check"></i>
+                        <div class="text">
+                            <h6 class="mb-0">{{page_09_s4_header_1}}</h6>
+                        </div>
+                        <img src="{{frontpageimglink}}whyus_bg.jpg" alt="img" class="image-fit">
+                    </li>
+                    <li class="wow fadeInDown">
+                        <i class="icon fal fa-check"></i>
+                        <div class="text">
+                            <h6 class="mb-0">{{page_09_s4_header_2}}</h6>
+                        </div>
+                        <img src="{{frontpageimglink}}whyus_bg.jpg" alt="img" class="image-fit">
+                    </li>
+                    <li class="wow fadeInUp">
+                        <i class="icon fal fa-check"></i>
+                        <div class="text">
+                            <h6 class="mb-0">{{page_09_s4_header_3}}</h6>
+                        </div>
+                        <img src="{{frontpageimglink}}whyus_bg.jpg" alt="img" class="image-fit">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{{/page_09_s4_enabled}}
+<!-- What We Know End -->
+
+<!-- Counter Box Start -->
+{{#page_09_s5_enabled}}
+<div class="section-padding pt-0">
+    <div class="container">
+        <div class="row">
+            {{#h2_02_block}}
+            <!-- Box -->
+            <div class="{{col}}">
+                <div class="counter_box wow fadeInUp" data-wow-delay=".{{counter4}}s">
+                    <div class="mr-5">
+                        <img src="{{frontpageimglink}}icons/icon_{{counter4}}.png" alt="icon" class="image-fit">
+                    </div>
+                    <div class="text">
+                        <div class="counter">
+                            <b data-from="0" data-to="{{counting}}">{{counting}}</b>
+                        </div>
+                        <p class="mb-0">{{{title}}}</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Box -->
+            {{/h2_02_block}}
+        </div>
+    </div>
+</div>
+{{/page_09_s5_enabled}}
+<!-- Counter Box End -->
+
+<!-- Testimonials Start -->
+{{#page_09_s6_enabled}}
+<section class="section section-bg relative z-1 about_bg" style="background-image: url({{frontpageimglink}}bg/bg_1.png);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title left-align wow fadeInLeft">
+                    <p class="subtitle mb-4">
+                        <i class="fal fa-book"></i>
+                        {{h1_07_block_headline}}
+                    </p>
+                    <h3 class="title mb-0">{{h1_07_block_header}}<br> {{h1_07_block_maintitle}}</h3>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial_slider style_2 row wow fadeInDown">
+            <!-- Testimonial Item -->
+            {{#h1_07_block}}
+            <div class="slide-item col-12">
+                <div class="testimonial_item style_4">
+                    <div class="author">
+                        <div class="image bg-thm-color-two">
+                            <img src="{{frontpageimglink}}author/{{counter}}.jpg" alt="img" class="image-fit">
+                        </div>
+                        <div class="text">
+                            <h6 class="mb-0">{{name}}</h6>
+                            <p class="mb-0 font-weight-bold thm-color-two">{{job}}</p>
+                        </div>
+                    </div>
+                    <p class="comment">
+                       {{comment}}
+                    </p>
+                        <div class="ratings">
+                            <i class="fal fa-star {{rating1}}"></i>
+                            <i class="fal fa-star {{rating2}}"></i>
+                            <i class="fal fa-star {{rating3}}"></i>
+                            <i class="fal fa-star {{rating4}}"></i>
+                            <i class="fal fa-star {{rating5}}"></i>
+                        </div>
+                </div>
+            </div>
+            {{/h1_07_block}}
+        </div>
+    </div>
+</section>
+{{/page_09_s6_enabled}}
+<!-- Testimonials End -->
+
+<!-- Sponsors Start -->
+{{#page_09_s7_enabled}}
+<div class="section-padding">
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-auto">
+                <div class="sponsors_img">
+                    <img src="{{frontpageimglink}}sponsors/1.png" alt="img">
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="sponsors_img">
+                    <img src="{{frontpageimglink}}sponsors/2.png" alt="img">
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="sponsors_img">
+                    <img src="{{frontpageimglink}}sponsors/3.png" alt="img">
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="sponsors_img">
+                    <img src="{{frontpageimglink}}sponsors/4.png" alt="img">
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="sponsors_img">
+                    <img src="{{frontpageimglink}}sponsors/5.png" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{/page_09_s7_enabled}}
+<!-- Sponsors End -->
+
+<!-- Cta Start -->
+{{#page_09_s8_enabled}}
+<div class="cta_box style_2">
+    <div class="container relative z-2">
+        <div class="bg-thm-color-two cta_box_inner z-2 mb-negative">
+            <img src="{{frontpageimglink}}elements/shape.png" alt="shape" class="shape_1 zoom-fade">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6">
+                    <div class="text_block wow fadeInLeft">
+                        <div class="section-title left-align white">
+                            <p class="subtitle">
+                                <i class="fal fa-book"></i>
+                                {{page_09_s8_headline}}
+                            </p>
+                            <h3 class="title">{{page_09_s8_header}}</h3>
+                            <a href="{{page_09_s8_button_link}}" class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle">
+                                {{page_09_s8_button}}
+                                <i class="fal fa-chevron-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="image_box relative z-1 wow fadeInRight">
+                        <img src="{{frontpageimglink}}elements/square_shape.png" alt="shape" class="shape_2 rotate_elem">
+                        <img src="{{frontpageimglink}}cta_image.png" alt="img" class="image-fit">
+                        <div class="arrows slideRight">
+                            <div class="arrow"></div>
+                            <div class="arrow"></div>
+                            <div class="arrow"></div>
+                            <div class="arrow"></div>
+                            <div class="arrow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrows to_up slideTop">
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+        </div>
+    </div>
+</div>
+{{/page_09_s8_enabled}}
+<!-- Cta End -->
+
+{{#footer_enabled}}
+    {{> theme_wellko/frontpage/other/footer03 }}
+{{/footer_enabled}}

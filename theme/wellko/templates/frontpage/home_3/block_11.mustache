@@ -1,0 +1,59 @@
+    <section id="h3_block11" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title wow fadeInUp">
+                        <p class="subtitle">
+                            <i class="fal fa-book"></i>
+                            <span lang="en" class="multilang" style="display:none;">{{h3_11_block_headline_1}}</span>
+                            <span lang="tr" class="multilang" style="display:none;">{{h3_11_block_headline_2}}</span>
+                            
+                        </p>
+                        <h3 class="title">
+                        <span lang="en" class="multilang" style="display:none;">{{h3_11_block_header_1}}</span>
+                        <span lang="tr" class="multilang" style="display:none;">{{h3_11_block_header_2}}</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- post -->
+                {{#h3_11_block}}
+                <div class="col-xl-4 col-md-6">
+                    <article class="post style_2 wow fadeInDown" data-wow-delay=".{{count}}s">
+                        <div class="post_img">
+                            {{#imgurl}}
+                            <img src="{{imgurl}}" alt="img" class="image-fit">
+                            {{/imgurl}}
+                        </div>
+                        <div class="post_caption">
+                            <ul class="post_meta">
+                                <li>
+                                    <i class="fal fa-calendar-alt"></i>
+                                    {{lastmodified}}
+                                </li>
+                                <li>
+                                    <i class="fal fa-comment-lines"></i>
+                                    <span lang="en" class="multilang" style="display:none;">Comments</span>
+                            <span lang="tr" class="multilang" style="display:none;">Yorum</span> ({{commentscount}}) 
+                                </li>
+                            </ul>
+                            <h4 class="post_title">
+                                <a href="{{post_detail_lnk}}">{{subject}}</a>
+                            </h4>
+                            <p class="post_text">
+                               {{#shortentext}} 125, {{{summary}}} {{/shortentext}}
+                            </p>
+                            <a href="{{post_detail_lnk}}" class="thm-btn bg-thm-color-white thm-color-one btn-rectangle">
+                            <span lang="en" class="multilang" style="display:none;">Read More</span>
+                            <span lang="tr" class="multilang" style="display:none;">Daha Fazla</span>
+                            <i class="fal fa-chevron-right ml-2"></i></a>
+                        </div>
+                    </article>
+                </div>
+                {{/h3_11_block}}
+                <!-- post -->
+            </div>
+        </div>
+    </section>
+    <!-- Blog End -->

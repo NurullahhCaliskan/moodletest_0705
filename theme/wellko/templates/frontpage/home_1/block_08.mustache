@@ -1,0 +1,59 @@
+<section id="h1_block08" class="section-padding pt-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title wow fadeInUp">
+                    <p class="subtitle">
+                        <i class="fal fa-book"></i>
+                        {{h1_08_block_headline}}
+                    </p>
+                    <h3 class="title">{{h1_08_block_header}}</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Coach block -->
+            {{#h1_08_block}}
+            <div class="col-xl-4 col-md-6">
+                <div class="coach_block wow fadeInDown" data-wow-delay=".{{counter}}s">
+                    <div class="coach_img">
+                        {{#imgurl}}
+                        <img src="{{imgurl}}" alt="img" class="image-fit">
+                        <div class="coach_badges">
+                            <span class="tag_badge bg-thm-color-four">{{cost}}{{currency}}</span>
+                        </div>
+                        {{/imgurl}}
+                        <a href="{{coursed_detail_lnk}}" class="thm-btn thm-color-two bg-thm-color-white thm-color-two-shadow btn-circle link">
+                            <i class="fal fa-chevron-right"></i>
+                        </a>
+                    </div>
+                    <div class="coach_caption">
+                        <div class="coach_meta">
+                            <a href="{{categorylink}}" class="coach_cat thm-btn bg-thm-color-three thm-color-three-shadow btn-rounded">{{categoryName}}</a>
+                            <div class="ratings">
+                                <i class="fal fa-star active"></i>
+                                <i class="fal fa-star  active"></i>
+                                <i class="fal fa-star  active"></i>
+                                <i class="fal fa-star  active"></i>
+                                <i class="fal fa-star  active"></i>
+                            </div>
+                        </div>
+                        <h5 class="title mb-xl-20">
+                            <a href="{{coursed_detail_lnk}}">
+                                {{fullname}}
+                            </a>
+                        </h5>
+                        <div class="author">
+                            {{#userpicture}}
+                            <img src="{{userpicture}}" alt="img" class="image-fit">
+                            <a href="{{team_detail_lnk}}" class="thm-color-one">{{teachername}}</a>
+                            {{/userpicture}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/h1_08_block}}
+            <!-- Coach block -->
+        </div>
+    </div>
+</section>

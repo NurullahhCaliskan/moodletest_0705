@@ -1,0 +1,276 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    Page Services.
+}}
+{{> theme_wellko/frontpage/navbar/header3 }}
+<!-- Subheader Start -->
+{{< theme_wellko/frontpage/page/page_subhdr }}
+    
+    {{$page_subhdimg_0}}
+        {{#page_05_page_subhdimg}}style="background-image: url({{frontpageimglink}}{{page_05_page_subhdimg}});"{{/page_05_page_subhdimg}}
+        {{^page_05_page_subhdimg}}style="padding: 70px 0 28px;"{{/page_05_page_subhdimg}}
+    {{/page_subhdimg_0}}    
+
+    {{$page_subhdimg_1}}
+        {{^page_05_page_subhdimg}}style="font-size: 45px;"{{/page_05_page_subhdimg}}
+    {{/page_subhdimg_1}}
+
+    {{$page_subhdimg_2}}
+        {{page_05_page_title}}
+    {{/page_subhdimg_2}}
+
+    {{$page_subhdimg_3}}
+        {{#page_05_page_subhdimg}}
+            {{> theme_wellko/frontpage/page/page_subhdr_elm }}
+        {{/page_05_page_subhdimg}}
+    {{/page_subhdimg_3}}
+
+{{/ theme_wellko/frontpage/page/page_subhdr }}
+<!-- Subheader End -->
+<!-- Services Start -->
+{{#page_05_s1_enabled}}
+<section class="section-padding section_counter">
+    <div class="container">
+        <div class="row">
+            {{#page_05_s1}}
+            <div class="col-lg-6">
+                <div class="service_block shadow_1 wow fadeInUp" data-wow-delay="0.{{counter}}ms">
+                    <div class="icn">
+                        <img src="{{frontpageimglink}}service/{{counter}}.png" alt="icon">
+                    </div>
+                    <div class="text">
+                        <h5 class="title"><a href="#">{{title}}</a></h5>
+                        <p class="mb-0">{{caption}}</p>
+                    </div>
+                </div>
+            </div>
+            {{/page_05_s1}}
+        </div>
+    </div>
+</section>
+{{/page_05_s1_enabled}}
+{{#page_05_s2_enabled}}
+<!-- Video Quote Start -->
+<section class="bg-thm-color-two-gradient z-1 video_quote">
+    <img src="{{frontpageimglink}}elements/element_2.png" class="element_2" alt="Element">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters align-items-center">
+            <div class="col-lg-6">
+                <div class="video_warp relative z-1 h-100 wow fadeInLeft">
+                    <img src="{{frontpageimglink}}video_img.png" alt="img" class="image-fit">
+                    <a href="{{page_05_s2_btna_link}}" class="popup-youtube video_btn transform-center justify-content-center d-flex style_2">
+                        <i class="fas fa-play video_icon bg-thm-color-three pulse-animated"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="arrows slideRight">
+                    <div class="arrow"></div>
+                    <div class="arrow"></div>
+                    <div class="arrow"></div>
+                    <div class="arrow"></div>
+                    <div class="arrow"></div>
+                </div>
+                <img src="{{frontpageimglink}}elements/element_11.png" class="element_4 rotate_elem" alt="img">
+                <div class="quote_sec about relative z-1">
+                    <img src="{{frontpageimglink}}elements/element_17.png" class="element_5 rotate_elem" alt="img">
+                    <div class="section-title left-align wow fadeInUp">
+                        <p class="subtitle">
+                            <i class="fal fa-book"></i>
+                            {{page_05_s2_headline}}
+                        </p>
+                        <h3 class="title mb-0">{{page_05_s2_header}}</h3>
+                    </div>
+                    <p>{{page_05_s2_maintitle}}</p>
+                    <form class="wow fadeInDown" action="{{page_05_s2_btnb_link}}" method="post">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input id="name" type="text" name="name" required="required" class="form-control form-control-custom" placeholder="Your Name" autocomplete="off">
+                                    <i class="fal fa-user"></i>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input id="email" type="text" name="email" required="required" class="form-control form-control-custom" placeholder="Email Address" autocomplete="off">
+                                    <i class="fal fa-envelope"></i>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <button type="submit" name="submit" id="submit" value="Send" class="thm-btn bg-thm-color-two thm-color-two-shadow btn-rounded">{{page_05_s2_btnb}} 
+                                    <i class="fal fa-chevron-right ml-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <input type="hidden" name="sesskey" value="{{sesskey}}">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Video Quote End -->
+{{/page_05_s2_enabled}}
+<!-- Sponsors Start -->
+{{#page_05_s3_enabled}}
+<section id="h3_block06" class="pricing_sec section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title wow fadeInDown">
+                    <p class="subtitle">
+                        <i class="fal fa-book"></i>
+                        {{h3_06_block_headline}}
+                    </p>
+                    <h3 class="title">{{h3_06_block_header}}</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav nav-tabs style_1 border-0 justify-content-center justify-content-lg-end wow fadeInRight">
+                    <li class="nav-item">
+                        <a href="#monthly" class="nav-link mb-0 border-0 thm-btn bg-thm-color-one  btn-rectangle active" data-toggle="tab">Monthly 
+                            <i class="fal fa-chevron-right ml-2"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#yearly" class="nav-link mb-0 border-0 thm-btn bg-thm-color-one btn-rectangle" data-toggle="tab">Yearly 
+                            <i class="fal fa-chevron-right ml-2"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade active show" id="monthly">
+                        <div class="row no-gutters justify-content-center">
+                            {{#h3_06_block}}
+                            <div class="col-lg-4 col-md-6">
+                                <div class="plan_box {{active_m}} wow fadeInDown">
+                                    <h4 class="plan_title">{{title_m}}</h4>
+                                    <p class="plan_subtext">{{caption_m}}</p>
+                                    <h2 class="plan_price">{{price_m}}</h2>
+                                    <ul class="about_list style_2 mb-xl-30">
+                                        <li>
+                                            {{text_four_m_1}}
+                                        </li>
+                                        <li>
+                                            {{text_four_m_2}}
+                                        </li>
+                                        <li>
+                                            {{text_four_m_3}}
+                                        </li>
+                                        <li>
+                                            {{text_four_m_4}}
+                                        </li>
+                                    </ul>
+                                    <a href="?page=10" class="thm-btn bg-thm-color-two-light thm-color-one btn-rectangle">Select Plan 
+                                        <i class="fal fa-chevron-right ml-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            {{/h3_06_block}}
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="yearly">
+                        <div class="row no-gutters justify-content-center">
+                            {{#h3_06_block}}
+                            <div class="col-lg-4 col-md-6">
+                                <div class="plan_box {{active_y}} wow fadeInUp">
+                                    <h4 class="plan_title">{{title_y}}</h4>
+                                    <p class="plan_subtext">{{caption_y}}</p>
+                                    <h2 class="plan_price">{{price_y}}</h2>
+                                    <ul class="about_list style_2 mb-xl-30">
+                                        <li>
+                                            {{text_four_y_1}}
+                                        </li>
+                                        <li>
+                                            {{text_four_y_2}}
+                                        </li>
+                                        <li>
+                                            {{text_four_y_3}}
+                                        </li>
+                                        <li>
+                                            {{text_four_y_4}}
+                                        </li>
+                                    </ul>
+                                    <a href="?page=10" class="thm-btn bg-thm-color-two-light thm-color-one btn-rectangle">Select Plan 
+                                        <i class="fal fa-chevron-right ml-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            {{/h3_06_block}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/page_05_s3_enabled}}
+<!-- Sponsors End -->
+{{#page_05_s4_enabled}}
+<section id="h3_block12" class="cta_box style_2">
+    <div class="container relative z-2">
+        <div class="bg-thm-color-two cta_box_inner z-2 mb-negative">
+            <img src="{{frontpageimglink}}elements/shape.png" alt="shape" class="shape_1 zoom-fade">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6">
+                    <div class="text_block wow fadeInLeft">
+                        <div class="section-title left-align white">
+                            <p class="subtitle">
+                            <i class="fal fa-book"></i>
+                                {{page_05_s4_headline}}
+                            </p>
+                            <h3 class="title">{{page_05_s4_header}}</h3>
+                            <a href="{{{page_05_s4_button_link}}}" class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle">
+                                {{page_05_s4_button}} 
+                                <i class="fal fa-chevron-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="image_box relative z-1 wow fadeInRight">
+                        <img src="{{frontpageimglink}}elements/square_shape.png" alt="shape" class="shape_2 rotate_elem">
+                        <img src="{{frontpageimglink}}cta_image.png" alt="img" class="image-fit">
+                        <div class="arrows slideRight">
+                            <div class="arrow"></div>
+                            <div class="arrow"></div>
+                            <div class="arrow"></div>
+                            <div class="arrow"></div>
+                            <div class="arrow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrows to_up slideTop">
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+        </div>
+    </div>
+</section>
+{{/page_05_s4_enabled}}
+<!-- Services End -->
+{{#footer_enabled}}
+    {{> theme_wellko/frontpage/other/footer03 }}
+{{/footer_enabled}}

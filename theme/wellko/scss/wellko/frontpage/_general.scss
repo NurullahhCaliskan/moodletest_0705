@@ -1,0 +1,105 @@
+/* General scss */
+$font-main:  "Helvetica" , sans-serif;
+/* Start ScrollUp */
+.scrollUp {
+    background-color: var(--theme-color);
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    right: 30px;
+    bottom: 30px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 37px;
+    border-radius: 15%;
+    font-size: 25px;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .7s ease 0s, visibility .1s ease .8s;
+    display: block;
+    position: fixed;
+    z-index: 10009;
+    a {
+        position: absolute;
+        right: 0;
+        transform: translateY(-100%);
+    }
+}
+body.scrolled .scrollUp {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0s ease 0s, opacity .7s ease .1s;
+}
+/* End ScrollUp */
+
+.wellkosetup .modal .close {
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    color: white;
+    border-radius: 3px;
+    font-size: 30px;
+    opacity: 1;
+}
+.modal-content {
+    border-radius: 5px;
+}
+.img-filter {
+    filter: brightness(60%);
+}
+/* boostrap/moodle/core.scss override*/
+.aabtn.focus,
+.aabtn:focus,
+.btn-link.focus,
+.btn-link:focus,
+.nav-link.focus,
+.nav-link:focus,
+.editor_atto_toolbar button.focus,
+.editor_atto_toolbar button:focus,
+.editor_atto_toolbar .atto_toolbar_row.focus,
+.editor_atto_toolbar .atto_toolbar_row:focus,
+[role="button"].focus,
+[role="button"]:focus,
+.list-group-item-action.focus,
+.list-group-item-action:focus,
+input[type="checkbox"].focus,
+input[type="checkbox"]:focus,
+input[type="radio"].focus,
+input[type="radio"]:focus,
+input[type="file"].focus,
+input[type="file"]:focus,
+input[type="image"].focus,
+input[type="image"]:focus,
+.sr-only-focusable.focus,
+.sr-only-focusable:focus,
+a.dropdown-toggle.focus,
+a.dropdown-toggle:focus,
+.modal-dialog[tabindex="0"].focus,
+.modal-dialog[tabindex="0"]:focus,
+.moodle-dialogue-base .closebutton.focus,
+.moodle-dialogue-base .closebutton:focus,
+button.close.focus,
+button.close:focus,
+.form-autocomplete-selection.focus,
+.form-autocomplete-selection:focus,
+[role="treeitem"]:not([aria-expanded="true"]).focus,
+[role="treeitem"]:not([aria-expanded="true"]):focus {
+    box-shadow: none;
+}
+
+@media (max-width: 767.98px) {
+    .breadcrumb-item {
+        padding-top: initial !important;
+        padding-bottom: initial !important;
+        display: initial !important;
+        overflow: initial !important;
+        flex-grow: unset !important;
+    }
+}
+@include media-breakpoint-down(sm) {
+    .nav-tabs:not(.more-nav),
+    .nav-pills {
+        background-color: transparent;
+    }
+}

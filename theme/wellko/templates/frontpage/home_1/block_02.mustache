@@ -1,0 +1,23 @@
+<section id="h1_block02" class="section-padding">
+    <div class="container">
+        <div class="row">
+            {{#h1_02_block}}
+            <!-- Feature Box Start -->
+            <div class="{{col}}">
+                <div class="features_box wow fadeInUp" data-wow-delay=".{{counter4}}s">
+                    <div class="mb-30">
+                        <img src="{{frontpageimglink}}icons/icon_{{counter}}.png" alt="img">
+                    </div>
+                    <h5>{{{title}}}</h5>
+                    <p>{{#shortentext}} 150, {{{caption}}} {{/shortentext}}</p>
+                    <a href="{{buttonurl}}">
+                        <span>{{{button}}}</span>
+                        <i class="fal fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Feature Box End -->
+            {{/h1_02_block}}
+        </div>
+    </div>
+</section>

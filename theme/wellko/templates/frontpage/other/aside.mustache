@@ -1,0 +1,43 @@
+<aside class="aside_bar aside_bar_right aside_canvas">
+    <!-- logo -->
+    <div class="logo pl-0">
+        {{#output.get_compact_logo_url}}
+        <img src="{{output.get_compact_logo_url}}" alt="{{sitename}}">
+        {{/output.get_compact_logo_url}}
+    </div>
+    <!-- logo -->
+    <p>{{aside_caption}}</p>
+    <div class="sidebar">
+        <div class="sidebar_widget recent_widgets">
+            <h5 class="widget_title">{{aside_header1}}</h5>
+            <ul>
+                {{#aside_course}}
+                <li>
+                    <div class="image">
+                        {{#imgurl}}
+                        <img src="{{imgurl}}" alt="img" class="image-fit rounded">
+                        {{/imgurl}}
+                    </div>
+                    <div class="text">
+                        <h6 class="mb-0">
+                            <a href="{{coursed_detail_lnk}}">{{fullname}}</a>
+                        </h6>
+                        <p class="mb-0"><strong>By </strong><a href="{{coursed_detail_lnk}}">{{teachername}}</a></p>
+                    </div>
+                </li>
+                {{/aside_course}}
+            </ul>
+        </div>
+        <div class="sidebar_widget">
+            <h5 class="widget_title">{{aside_header2}}</h5>
+            <div class="tags">
+            {{#aside}}
+                <a href="{{catagoryURL}}">
+                    {{#shortentext}} 20, {{{catagoryname}}} {{/shortentext}}
+                </a>    
+            {{/aside}}
+            </div>
+        </div>
+    </div>
+</aside>
+<div class="aside-overlay trigger-right"></div>

@@ -1,0 +1,96 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+<header class="header header-absolute can-sticky"
+        aria-label="{{#str}}sitemenubar, admin{{/str}}">
+    <div class="container">
+        <!-- inner -->
+        <div class="nav_warp">
+            <nav>
+                <!-- logo start -->
+                <div class="logo">
+                    <a href="{{{ config.homeurl }}}">
+                       {{# output.should_display_navbar_logo }}
+                            <img src="{{output.get_compact_logo_url}}" class="image-fit" alt="{{sitename}}">
+                        {{/ output.should_display_navbar_logo }}
+                        {{^ output.should_display_navbar_logo }}
+                            {{{ sitename }}}
+                        {{/ output.should_display_navbar_logo }}
+                    </a>
+                </div>
+                <!-- logo end -->
+                 <!-- Navigation Start -->
+                <ul class="main-menu">
+                    {{#userlogin}}
+                    <!-- Add Dashboard
+                    <li class="menu-item">
+                        <a href="my">{{#str}}mymoodle, admin{{/str}}</a>
+                    </li>
+                    -->
+                    {{/userlogin}}
+                    {{{frontpagenavlink}}}
+                </ul>
+                <!-- Navigation End -->
+            </nav>
+            
+            <!-- Head Actions -->
+            <div class="head_actions">
+                <!-- Search -->
+                <div class="search_bar relative pr-3 ">
+                    <form action="search">
+                        <input type="text" name="q" placeholder="{{#str}} search, moodle {{/str}} " autocomplete="off">
+                        <i class="fal fa-search"></i>
+                    </form>    
+                </div>
+                <!-- Search -->
+                {{#userlogin}}
+                    {{#usermenu}}
+                    <div class="d-none d-sm-block">
+                        {{> core/user_menu }}
+                    </div>
+                    {{/usermenu}}
+                {{/userlogin}}   
+                {{^userlogin}}
+                    <div class="login_bar relative d-none d-md-block">
+                        <a class="d-flex align-items-center" href="login/index.php" >
+                            {{#str}} login, core {{/str}}
+                        </a>
+                        <i class="fas fa-sign-in"></i>
+                    </div>
+                    <div class="d-block d-md-none ">
+                        <a class="d-flex align-items-center" href="login/index.php" title="{{#str}} login, core {{/str}}">
+                            <i class="fal fa-sign-in-alt fa-2x"></i>
+                        </a>
+                    </div>
+                {{/userlogin}}
+                {{#aside_enabled}}
+                <button type="button" class="head_trigger desktop_trigger ml-3" title="Desktop Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                {{/aside_enabled}}
+                <button type="button" class="head_trigger mobile_trigger" title="Mobil Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <!-- Head Actions -->
+        </div>
+        <!-- inner -->
+    </div>
+</header>

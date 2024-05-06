@@ -1,0 +1,35 @@
+<section id="h1_block04" class="section-padding bg-thm-color-two-gradient z-1 team_main_wrap pb-extra">
+    <img src="{{frontpageimglink}}elements/element_1.png" class="element_1" alt="Element">
+    <img src="{{frontpageimglink}}elements/element_2.png" class="element_2" alt="Element">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title wow fadeInDown">
+                    <p class="subtitle">
+                        <i class="fal fa-book"></i>
+                        {{h1_04_block_headline}}
+                    </p>
+                    <h3 class="title">{{h1_04_block_header}}</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {{#h1_04_block}}
+            <div class="col-lg col-md-6">
+                <div class="team_block wow fadeInUp" data-wow-delay=".{{counter3}}s">
+                    <div class="team_img">
+                        {{#userpictureURL}}
+                        <img src="{{userpictureURL}}" alt="img" class="image-fit">
+                        {{/userpictureURL}}
+                        <a href="{{team_detail_lnk}}" class="thm-btn bg-thm-color-two thm-color-two-shadow btn-circle link">
+                            <i class="fal fa-plus"></i>
+                        </a>
+                    </div>
+                    <h6 class="mb-1"><a href="{{team_detail_lnk}}">{{teachername}}</a></h6>
+                    <p class="thm-color-two mb-0 font-weight-bold">{{job}}</p>
+                </div>
+            </div>
+            {{/h1_04_block}}
+        </div>
+    </div>
+</section>
